@@ -5,13 +5,62 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Booking page</title>
-        <link rel="stylesheet" href="./booking.css" />
+        <link rel="stylesheet" href="css/booking.css" />
         <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     </head>
     <body>
         <main>
             <h1>Book sessions with us!</h1>
+            <form>
+                <div class="name-group">
+                    <label for="firstName">First Name:</label>
+                    <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        required
+                        placeholder="First name"
+                    />
+                </div>
+
+                <div class="name-group">
+                    <label for="lastName">Last Name:</label>
+                    <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        required
+                        placeholder="Last name"
+                    />
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="Add your email"
+                    />
+                </div>
+
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="3"
+                        required
+                        placeholder="Extra information"
+                    ></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+                <!--will change this to a class -->
+            </form>
         </main>
-        <script src="booking.js"></script>
+        <script src="javascript/booking.js"></script>
     </body>
+    <footer>&copy; 2024 FRAME PHOTOGRAPHY| All Rights Reserved</footer>
 </html>

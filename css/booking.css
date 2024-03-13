@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    background-color: white;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for the form */
+    grid-gap: 16px; /* Spacing between columns */
+}
+
+/* added these as own class, trying to get them side by side setup*/
+.name-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-group label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    /* submit button for the form*/
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    display: block;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
