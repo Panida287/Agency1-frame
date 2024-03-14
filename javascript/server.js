@@ -21,15 +21,15 @@ const jsonString = `{
   ]
 }`;
   
-  // Parse the JSON string into a JavaScript object
+
   const jsonObject = JSON.parse(jsonString);
   
-  // Access properties of the parsed JSON object
-  jsonObject.posts.forEach(post => {
-    console.log("Title:", post.title);
-    console.log("Content:", post.content);
-    console.log("Category:", post.category);
-    console.log("Image:", post.image_path);
+
+  jsonObject.posts.forEach(id => {
+    console.log("Title:", id.title);
+    console.log("Content:", id.content);
+    console.log("Category:", id.category);
+    console.log("Image:", id.image_path);
   });
 
   
