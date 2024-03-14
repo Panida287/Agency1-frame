@@ -13,9 +13,9 @@ h1 {
 /* Header and nav bar starts here / should be the same head nav on all pages */
 
 header {
-    background-color: #333; /* Change background color as needed */
-    color: #fff; /* Change text color as needed */
-    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #333; /* Placeholder */
+    color: #fff; /* placeholder color ** note to change ** */
+    padding: 36px 146px; /* note to change this as they are only placeholder */
     text-align: center;
 }
 
