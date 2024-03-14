@@ -73,6 +73,9 @@ textarea {
     margin-bottom: 16px;
     box-sizing: border-box;
 }
+.form-list {
+    background-color: white;
+}
 
 button {
     /* submit button for the form*/
@@ -93,7 +96,7 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 36px 146px;
     position: fixed;
     bottom: 0;
     width: 100%;
