@@ -76,7 +76,9 @@ textarea {
 .form-list {
     background-color: white;
 }
-
+.time-txt {
+    color: white;
+}
 button {
     /* submit button for the form*/
     background-color: #3498db;
