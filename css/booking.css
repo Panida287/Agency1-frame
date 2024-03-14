@@ -11,6 +11,7 @@ h1 {
     background-color: white;
 }
 
+/* Main sections content starts here */
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -51,6 +52,7 @@ button:hover {
     background-color: #2980b9;
 }
 
+/* Main content ends here / Footer content starts here */
 footer {
     background-color: #333;
     color: #fff;
