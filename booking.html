@@ -27,15 +27,21 @@
     <!--header and nav ends here -->
     <main>
         <h1>Book sessions with us!</h1>
-        <form>
+        <form class="booking-form">
             <div class="name-group">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" required placeholder="First name" />
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" required placeholder="Last name" />
+                <p class="name-group-title">Client´s Name</p>
+                <div class="name-inputs">
+                    <label for="firstName">First Name:</label>
+
+                    <input type="text" id="firstName" name="firstName" required placeholder="First name" />
+                    <label for="lastName">Last Name:</label>
+
+                    <input type="text" id="lastName" name="lastName" required placeholder="Last name" />
+                </div>
             </div>
 
-            <div>
+
+            <div class="mail-tab">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required placeholder="Add your email" />
             </div>

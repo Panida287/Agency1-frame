@@ -48,22 +48,34 @@ nav a:hover {
 }
 
 /* Main sections content starts here */
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns for the form */
-    grid-gap: 16px; /* Spacing between columns */
+.booking-form {
+    max-width: 100%;
+    margin: 10%;
+    display: column;
+    align-items: center;
 }
 
 /* added these as own class, trying to get them side by side setup*/
 .name-group {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Display children in a column layout */
+    align-items: center; /* Center align children horizontally */
+    text-align: center; /* Center align text */
+}
+
+.name-inputs {
+    display: flex;
+
+    align-self: flex-start; /* Center align children horizontally */
 }
 
 .name-group label {
     margin-bottom: 8px;
+}
+
+.name-group-title {
+    color: white;
+    align-self: flex-start;
 }
 
 input,
@@ -87,6 +99,7 @@ button {
     border: none;
     font-size: 16px;
     display: block;
+    border-radius: 8%;
 }
 
 button:hover {
