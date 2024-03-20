@@ -7,16 +7,39 @@ body {
     background-color: black;
 }
 
+/* All title and p classes are in one place - from here*/
 h1 {
     color: white;
     text-align: center;
 }
+
+.name-group-title {
+    color: white;
+    align-self: flex-start;
+}
+
+.time-title {
+    color: white;
+    flex-direction: left;
+    margin-bottom: 10px;
+}
+
+.clock-colon {
+    color: white;
+    padding: 10px;
+}
+
+/* Titles and p ends here*/
+
 /* Header and nav bar starts here / should be the same head nav on all pages */
 
 header {
-    background-color: #333; /* Placeholder */
-    color: #fff; /* placeholder color ** note to change ** */
-    padding: 36px 146px; /* note to change this as they are only placeholder */
+    background-color: #333;
+    /* Placeholder */
+    color: #fff;
+    /* placeholder color ** note to change ** */
+    padding: 36px 146px;
+    /* note to change this as they are only placeholder */
     text-align: center;
 }
 
@@ -35,17 +58,21 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 20px; /* Adjust spacing between menu items */
+    margin-right: 20px;
+    /* Adjust spacing between menu items */
 }
 
 nav a {
-    color: #fff; /* Change text color as needed */
+    color: #fff;
+    /* Change text color as needed */
     text-decoration: none;
-    font-size: 18px; /* Adjust font size as needed */
+    font-size: 18px;
+    /* Adjust font size as needed */
 }
 
 nav a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline;
+    /* Add underline on hover */
 }
 
 /* Main sections content starts here */
@@ -66,17 +93,16 @@ nav a:hover {
 
 .name-inputs {
     display: flex;
+    align-self: flex-start;
+    /* Center align children horizontally */
+}
 
-    align-self: flex-start; /* Center align children horizontally */
+.time-date-form {
+    display: flex;
 }
 
 .name-group label {
     margin-bottom: 8px;
-}
-
-.name-group-title {
-    color: white;
-    align-self: flex-start;
 }
 
 input,
@@ -86,12 +112,15 @@ textarea {
     margin-bottom: 16px;
     box-sizing: border-box;
 }
+
 .form-list {
     background-color: white;
 }
+
 .time-txt {
     color: white;
 }
+
 button {
     /* submit button for the form*/
     background-color: #3498db;

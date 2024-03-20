@@ -37,84 +37,78 @@
                     <input type="text" id="lastName" name="lastName" required placeholder="Last name" />
                 </div>
             </div>
+        </form>
+
+        <div class="time-date-form">
+            <p class="time-title">Session Date & Time</p>
+            <input type="number" placeholder="Day" name="day" min="1" max="31" required>
+            <input type="number" placeholder="Month" name="month" min="1" max="12" required>
+            <input type="number" placeholder="Year" name="year" min="2022" required>
+            <input type="number" placeholder="Hour" name="hour" min="0" max="23" required>
+            <p class="clock-colon"> : </p>
+            <input type="number" placeholder="Minutes" name="minutes" min="0" max="59" required>
+        </div>
+
+        <div class="mail-tab">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Add your email" />
+        </div>
+
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="3" required placeholder="Extra information"></textarea>
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="3" required placeholder="Extra information"></textarea>
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="3" required placeholder="Extra information"></textarea>
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="3" required placeholder="Extra information"></textarea>
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="3" required placeholder="Extra information"></textarea>
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="3" required placeholder="Extra information"></textarea>
+        </div>
+        <div class="form-list">
+            <div class="form-cell">
+                <label>Session options</label>
+                <label for="Headshot">
+                    <input type="radio" id="head-sess" name="headshot" value="option1" />
+                    Headshot session</label>
+                <label for="Tindershots">
+                    <input type="radio" id="tinder" name="tindershot" value="option2" />
+                    Tinder shots</label>
+                <label for="photo-amount">
+                    <input type="radio" id="photo-amount" name="photo-amount" value="option3" />
+                    By amount of photos</label>
+                <label for="Half-day">
+                    <input type="radio" id="photo-length" name="half-day" value="option4" />
+                    Half day</label>
+                <label for="Boudoir">
+                    <input type="radio" id="Boudoir" name="boudoir-shots" value="option5" />
+                    Boudoir session</label>
+                <label for="Photographer">
+                    <input type="radio" id="photo" name="photographer" value="option6" />
+                    Photographer</label>
+            </div>
 
             <div>
-                <p class="time-title">Session Date & Time</p>
-                <label for="date">dd/mm/yyy:</label>
-                <input type="date" id="date" name="date" required placeholder="Date" </div>
-                <div class="form-row">
-                    <div class="form-cell">
-                        <label for="time">Time</label>
-                        <input placeholder="A time input" type="time" id="time" value="" />
-                    </div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="3" required placeholder="Extra information"></textarea>
+            </div>
 
-                    <div class="mail-tab">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required placeholder="Add your email" />
-                    </div>
-
-                    <div>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="3" required
-                            placeholder="Extra information"></textarea>
-                    </div>
-                    <div>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="3" required
-                            placeholder="Extra information"></textarea>
-                    </div>
-                    <div>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="3" required
-                            placeholder="Extra information"></textarea>
-                    </div>
-                    <div>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="3" required
-                            placeholder="Extra information"></textarea>
-                    </div>
-                    <div>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="3" required
-                            placeholder="Extra information"></textarea>
-                    </div>
-                    <div>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="3" required
-                            placeholder="Extra information"></textarea>
-                    </div>
-                    <div class="form-list">
-                        <div class="form-cell">
-                            <label>Session options</label>
-                            <label for="Headshot">
-                                <input type="radio" id="head-sess" name="headshot" value="option1" />
-                                Headshot session</label>
-                            <label for="Tindershots">
-                                <input type="radio" id="tinder" name="tindershot" value="option2" />
-                                Tinder shots</label>
-                            <label for="photo-amount">
-                                <input type="radio" id="photo-amount" name="photo-amount" value="option3" />
-                                By amount of photos</label>
-                            <label for="Half-day">
-                                <input type="radio" id="photo-length" name="half-day" value="option4" />
-                                Half day</label>
-                            <label for="Boudoir">
-                                <input type="radio" id="Boudoir" name="boudoir-shots" value="option5" />
-                                Boudoir session</label>
-                            <label for="Photographer">
-                                <input type="radio" id="photo" name="photographer" value="option6" />
-                                Photographer</label>
-                        </div>
-
-                        <div>
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="3" required
-                                placeholder="Extra information"></textarea>
-                        </div>
-
-                        <button type="submit">Submit</button>
-                        <!--will change this to a class -->
-        </form>
+            <button type="submit">Submit</button>
+            <!--will change this to a class -->
+            </form>
     </main>
     <script src="javascript/booking.js"></script>
 </body>
