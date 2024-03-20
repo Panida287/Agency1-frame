@@ -8,7 +8,8 @@ body {
 }
 
 h1 {
-    background-color: white;
+    color: white;
+    text-align: center;
 }
 /* Header and nav bar starts here / should be the same head nav on all pages */
 
@@ -58,9 +59,9 @@ nav a:hover {
 /* added these as own class, trying to get them side by side setup*/
 .name-group {
     display: flex;
-    flex-direction: column; /* Display children in a column layout */
-    align-items: center; /* Center align children horizontally */
-    text-align: center; /* Center align text */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .name-inputs {
