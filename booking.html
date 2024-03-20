@@ -39,7 +39,7 @@
             </div>
         </form>
 
-        <div class="time-date-form">
+        <form class="time-date-form">
             <p class="time-title">Session Date & Time</p>
             <input type="number" placeholder="Day" name="day" min="1" max="31" required>
             <input type="number" placeholder="Month" name="month" min="1" max="12" required>
@@ -47,13 +47,13 @@
             <input type="number" placeholder="Hour" name="hour" min="0" max="23" required>
             <p class="clock-colon"> : </p>
             <input type="number" placeholder="Minutes" name="minutes" min="0" max="59" required>
-        </div>
+        </form>
 
-        <div class="phone-form">
+        <form class="phone-form">
             <p class="phone-title">Phone Number</p>
             <input type="text" placeholder="Country Code" name="countryCode" required>
             <input type="tel" placeholder="Phone Number" name="phoneNumber" required>
-        </div>
+        </form>
         <!--Email input in phone form -->
         <div class="mail-form">
             <p class="mail-title">Email</p>
@@ -66,33 +66,43 @@
             <div class="form-cell">
                 <label>Session options</label>
                 <label for="Headshot">
-                    <input type="radio" id="head-sess" name="headshot" value="option1" />
+                    <input type="checkbox" id="head-sess" name="headshot" value="option1" />
                     Headshot session</label>
                 <label for="Tindershots">
-                    <input type="radio" id="tinder" name="tindershot" value="option2" />
+                    <input type="checkbox" id="tinder" name="tindershot" value="option2" />
                     Tinder shots</label>
-                <label for="photo-amount">
-                    <input type="radio" id="photo-amount" name="photo-amount" value="option3" />
-                    By amount of photos</label>
-                <label for="Half-day">
-                    <input type="radio" id="photo-length" name="half-day" value="option4" />
-                    Half day</label>
+                <label for="Wedding shots">
+                    <input type="checkbox" id="wedding" name="weddingshot" value="option3" />
+                    Wedding shots</label>
                 <label for="Boudoir">
-                    <input type="radio" id="Boudoir" name="boudoir-shots" value="option5" />
+                    <input type="checkbox" id="boudoir" name="boudoir-shots" value="option4" />
                     Boudoir session</label>
+                <label for="By amount of photos">
+                    <input type="checkbox" id="photo-amount" name="photo-amount" value="option5" />
+                    By amount of photos</label>
+                <input type="number" placeholder="Number of photos" name="number-of-photos" min="1">
+                <label for="Half day">
+                    <input type="checkbox" id="half-day" name="half-day" value="option6" />
+                    Half day</label>
+                <label for="Full day">
+                    <input type="checkbox" id="full-day" name="full-day" value="option7" />
+                    Full day</label>
                 <label for="Photographer">
-                    <input type="radio" id="photo" name="photographer" value="option6" />
+                    <input type="checkbox" id="photo" name="photographer" value="option8" />
                     Photographer</label>
+                <input type="text" placeholder="Photographer's name" name="photographer-name">
             </div>
+        </div>
 
-            <div>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="3" required placeholder="Extra information"></textarea>
-            </div>
+        <div class="requests-form">
+            <p class="request-title">Other request & information</p>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="3" required placeholder="Extra information"></textarea>
+        </div>
 
-            <button type="submit">Submit</button>
-            <!--will change this to a class -->
-            </form>
+        <button type="submit">Submit</button>
+        <!--will change this to a class -->
+        </form>
     </main>
     <script src="javascript/booking.js"></script>
 </body>
