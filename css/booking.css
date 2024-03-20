@@ -7,30 +7,6 @@ body {
     background-color: black;
 }
 
-/* All title and p classes are in one place - from here*/
-h1 {
-    color: white;
-    text-align: center;
-}
-
-.name-group-title {
-    color: white;
-    align-self: flex-start;
-}
-
-.time-title {
-    color: white;
-    flex-direction: left;
-    margin-bottom: 10px;
-}
-
-.clock-colon {
-    color: white;
-    padding: 10px;
-}
-
-/* Titles and p ends here*/
-
 /* Header and nav bar starts here / should be the same head nav on all pages */
 
 header {
@@ -75,6 +51,39 @@ nav a:hover {
     /* Add underline on hover */
 }
 
+/* All title and p classes are in one place - from here*/
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.name-group-title {
+    color: white;
+    align-self: flex-start;
+}
+
+.time-title {
+    color: white;
+    flex-direction: left;
+    margin-bottom: 10px;
+}
+
+.phone-title {
+    color: white;
+    flex-direction: left;
+}
+
+.clock-colon {
+    color: white;
+    padding: 10px;
+}
+
+.mail-title {
+    color: white;
+}
+
+/* Titles and p ends here*/
+
 /* Main sections content starts here */
 .booking-form {
     max-width: 100%;
@@ -101,6 +110,14 @@ nav a:hover {
     display: flex;
 }
 
+.phone-form {
+    display: flex;
+}
+
+.mail-form {
+    display: flex;
+}
+
 .name-group label {
     margin-bottom: 8px;
 }
@@ -113,7 +130,7 @@ textarea {
     box-sizing: border-box;
 }
 
-.form-list {
+.form-checklist {
     background-color: white;
 }
 
