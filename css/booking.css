@@ -26,6 +26,10 @@ nav {
     align-items: center;
 }
 
+.booking-container {
+    padding: 22px 75px;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
