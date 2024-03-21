@@ -133,8 +133,7 @@ h1 {
 input,
 textarea {
     width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
+    padding: 10px;
 }
 
 .form-checklist {
