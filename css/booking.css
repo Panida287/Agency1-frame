@@ -107,22 +107,18 @@ h1 {
 /* added these as own class, trying to get them side by side setup*/
 .name-group {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     /* align-items: center; */
     /* text-align: center; */
 }
 
 .name-inputs {
-    display: flex;
-    align-self: flex-start;
+    /* display: flex; */
+    /* align-self: flex-start; */
     /* Center align children horizontally */
 }
 
 .time-date-form {
-    display: flex;
-}
-
-.phone-form {
     display: flex;
 }
 

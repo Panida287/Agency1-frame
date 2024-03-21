@@ -40,18 +40,24 @@
                 </div>
             </form>
 
-            <form class="time-date-form">
+            <form class="booking-form">
                 <p class="time-title">Session Date & Time</p>
-                <input type="number" placeholder="Day" name="day" min="1" max="31" required>
-                <input type="number" placeholder="Month" name="month" min="1" max="12" required>
-                <input type="number" placeholder="Year" name="year" min="2022" required>
-                <input type="number" placeholder="Hour" name="hour" min="0" max="23" required>
-                <p class="clock-colon"> : </p>
-                <input type="number" placeholder="Minutes" name="minutes" min="0" max="59" required>
-            </form>
+                <div class="name-group">
+                    <form class="name-inputs">
+                        <input type="number" placeholder="Day" name="day" min="1" max="31" required>
+                        <input type="number" placeholder="Month" name="month" min="1" max="12" required>
+                        <input type="number" placeholder="Year" name="year" min="2022" required>
+                        <p class="clock-colon"> At </p>
+                        <input type="number" placeholder="Hour" name="hour" min="0" max="23" required>
+                        <p class="clock-colon"> : </p>
+                        <input type="number" placeholder="Minutes" name="minutes" min="0" max="59" required>
+                        </form>
+                    </div>
+                    </form>
 
-            <form class="phone-form">
+            <form class="booking-form">
                 <p class="phone-title">Phone Number</p>
+                
                 <input type="text" placeholder="Country Code" name="countryCode" required>
                 <input type="tel" placeholder="Phone Number" name="phoneNumber" required>
             </form>
