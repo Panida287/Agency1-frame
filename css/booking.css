@@ -96,25 +96,12 @@ h1 {
 
 /* Titles and p ends here*/
 
-.test-div {
-    background-color: green;
-    /* flex-direction: column; */
-    /* flex-direction: left; */
-    display: flex;
-}
-
-.test-div-inner .test-div{
-    /* display: flex; */
-    /* flex-direction: row; */
-}
-
-
 /* Main sections content starts here */
 .booking-form {
     max-width: 100%;
     /* margin: 10%; */
     display: column;
-    align-items: left;
+    /* align-items: center; */
 }
 
 /* added these as own class, trying to get them side by side setup*/
@@ -127,9 +114,7 @@ h1 {
 
 .name-inputs {
     display: flex;
-    /* flex-direction: column; */
     align-self: flex-start;
-    /* align-items: flex-start; */
     /* Center align children horizontally */
 }
 
