@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: grey;
 }
 
 /* Header and nav bar starts here / should be the same head nav on all pages */
@@ -94,29 +94,23 @@ h1 {
     color: black;
 }
 
-/* Titles and p ends here*/
-
-/* Main sections content starts here */
 .booking-form {
-    max-width: 100%;
-    /* margin: 10%; */
-    display: column;
-    /* align-items: center; */
+    /* background-color: yellow; */
 }
 
-/* added these as own class, trying to get them side by side setup*/
-.name-group {
+.horizontal-sort {
     display: flex;
-    /* flex-direction: row; */
-    /* align-items: center; */
-    /* text-align: center; */
+    width: 100%;
 }
 
-.name-inputs {
-    /* display: flex; */
-    /* align-self: flex-start; */
-    /* Center align children horizontally */
+.vertical-sort{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column;
+    background-color: red;
+    width: 100%;
 }
+
 
 .time-date-form {
     display: flex;
@@ -130,14 +124,14 @@ h1 {
     margin-bottom: 8px;
 }
 
-input,
+/* input, */
 textarea {
     width: 100%;
     padding: 10px;
 }
 
 .form-checklist {
-    background-color: white;
+    background-color: grey;
     display: flex;
 }
 
