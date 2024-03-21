@@ -140,6 +140,7 @@ textarea {
 
 .form-checklist {
     background-color: white;
+    display: flex;
 }
 
 .time-txt {
