@@ -4,18 +4,18 @@
 }
 
 body {
-    background-color: black;
+    background-color: grey;
 }
 
-h1 {
-    background-color: white;
-}
 /* Header and nav bar starts here / should be the same head nav on all pages */
 
 header {
-    background-color: #333; /* Placeholder */
-    color: #fff; /* placeholder color ** note to change ** */
-    padding: 36px 146px; /* note to change this as they are only placeholder */
+    background-color: #333;
+    /* Placeholder */
+    color: #fff;
+    /* placeholder color ** note to change ** */
+    padding: 36px 146px;
+    /* note to change this as they are only placeholder */
     text-align: center;
 }
 
@@ -26,6 +26,10 @@ nav {
     align-items: center;
 }
 
+.booking-container {
+    padding: 22px 75px;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -34,43 +38,27 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 20px; /* Adjust spacing between menu items */
+    margin-right: 20px;
+    /* Adjust spacing between menu items */
 }
 
 nav a {
-    color: #fff; /* Change text color as needed */
+    color: #fff;
+    /* Change text color as needed */
     text-decoration: none;
-    font-size: 18px; /* Adjust font size as needed */
+    font-size: 18px;
+    /* Adjust font size as needed */
 }
 
 nav a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline;
+    /* Add underline on hover */
 }
 
-/* Main sections content starts here */
-.booking-form {
-    max-width: 100%;
-    margin: 10%;
-    display: column;
-    align-items: center;
-}
-
-/* added these as own class, trying to get them side by side setup*/
-.name-group {
-    display: flex;
-    flex-direction: column; /* Display children in a column layout */
-    align-items: center; /* Center align children horizontally */
-    text-align: center; /* Center align text */
-}
-
-.name-inputs {
-    display: flex;
-
-    align-self: flex-start; /* Center align children horizontally */
-}
-
-.name-group label {
-    margin-bottom: 8px;
+/* All title and p classes are in one place - from here*/
+h1 {
+    color: white;
+    text-align: center;
 }
 
 .name-group-title {
@@ -78,19 +66,79 @@ nav a:hover {
     align-self: flex-start;
 }
 
-input,
+.time-title {
+    color: white;
+    flex-direction: left;
+    margin-bottom: 10px;
+}
+
+.phone-title {
+    color: white;
+    flex-direction: left;
+}
+
+.clock-colon {
+    color: white;
+    padding: 10px;
+}
+
+.mail-title {
+    color: white;
+}
+
+.request-title {
+    color: white;
+}
+
+.checklist-title {
+    color: black;
+}
+
+.booking-form {
+    /* background-color: yellow; */
+}
+
+.horizontal-sort {
+    display: flex;
+    width: 100%;
+}
+
+.vertical-sort{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column;
+    background-color: red;
+    width: 100%;
+}
+
+
+.time-date-form {
+    display: flex;
+}
+
+.mail-form {
+    display: flex;
+}
+
+.name-group label {
+    margin-bottom: 8px;
+}
+
+/* input, */
 textarea {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
+    padding: 10px;
 }
-.form-list {
-    background-color: white;
+
+.form-checklist {
+    background-color: grey;
+    display: flex;
 }
+
 .time-txt {
     color: white;
 }
+
 button {
     /* submit button for the form*/
     background-color: #3498db;
