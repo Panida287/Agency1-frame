@@ -1,35 +1,57 @@
-const jsonString = `{
-  "posts": [
-    { "id": 1, "title": "Post 1", "content": "Content of Post 1", "category": "wedding","image_path": "assets/wedding/g-1001.jpg"},
-    { "id": 2, "title": "Post 2", "content": "Content of Post 2", "category": "tinder", "image_path": "images/product1.jpg"},
-    { "id": 3, "title": "Post 3", "content": "Content of Post 2", "category": "tinder", "image_path": "images/product1.jpg"},
-    { "id": 4, "title": "Post 4", "content": "Content of Post 2", "category": "tinder", "image_path": "images/product1.jpg"},
-    { "id": 5, "title": "Post 5", "content": "Content of Post 2", "category": "tinder", "image_path": "images/product1.jpg"},
-    { "id": 6, "title": "Post 6", "content": "Content of Post 2", "category": "tinder", "image_path": "images/product1.jpg"},
-    { "id": 7, "title": "Post 7", "content": "Content of Post 2", "category": "tinder", "image_path": "images/product1.jpg"},
-    { "id": 8, "title": "Post 8", "content": "Content of Post 2", "category": "tinder", "image_path": "images/product1.jpg"},
-    { "id": 9, "title": "Post 9", "content": "Content of Post 2", "category": "tinder", "image_path": "images/product1.jpg"},
-    { "id": 10, "title": "Post 10", "content": "Content of Post 2", "category": "tinder", "image_path": "images/product1.jpg"},
-    { "id": 11, "title": "Post 11", "content": "Content of Post 2", "category": "tinder", "image_path": "images/product1.jpg"},
-    { "id": 12, "title": "Post 12", "content": "Content of Post 2", "category": "tinder", "image_path": "images/product1.jpg"},
-    { "id": 13, "title": "Post 13", "content": "Content of Post 2", "category": "tinder", "image_path": "images/product1.jpg"},
-    { "id": 14, "title": "Post 14", "content": "Content of Post 2", "category": "tinder", "image_path": "images/product1.jpg"},
-    { "id": 15, "title": "Post 15", "content": "Content of Post 2", "category": "tinder", "image_path": "images/product1.jpg"},
-    { "id": 16, "title": "Post 16", "content": "Content of Post 2", "category": "tinder", "image_path": "images/product1.jpg"},
-    { "id": 17, "title": "Post 17", "content": "Content of Post 2", "category": "tinder", "image_path": "images/product1.jpg"},
-    { "id": 18, "title": "Post 18", "content": "Content of Post 2", "category": "tinder", "image_path": "images/product1.jpg"}
-  ]
-}`;
-  
+// Wait for the DOM content to be fully loaded before executing JavaScript
+document.addEventListener("DOMContentLoaded", function () {
+  // Define an array of posts containing objects with post details
+  const posts = [
+    {
+      id: 1,
+      title: "Post 1",
+      content: "Content of Post 1",
+      category: "wedding",
+      image_path: "https://via.placeholder.com/150",
+    },
+    {
+      id: 2,
+      title: "Post 2",
+      content: "Content of Post 2",
+      category: "tinder",
+      image_path: "https://via.placeholder.com/150",
+    },
+    // Add more posts as needed
+  ];
 
-  const jsonObject = JSON.parse(jsonString);
-  
+  // Get the container element where posts will be displayed
+  const postsContainer = document.getElementById("postsContainer");
 
-  jsonObject.posts.forEach(id => {
-    console.log("Title:", id.title);
-    console.log("Content:", id.content);
-    console.log("Category:", id.category);
-    console.log("Image:", id.image_path);
+  // Loop through each post object in the array
+  posts.forEach((post) => {
+    // Create a div element for each post
+    const postElement = document.createElement("div");
+    postElement.classList.add("post");
+
+    // Create an h2 element for the post title
+    const titleElement = document.createElement("h2");
+    titleElement.textContent = post.title;
+
+    // Create a paragraph element for the post content
+    const contentElement = document.createElement("p");
+    contentElement.textContent = post.content;
+
+    // Create a paragraph element for the post category
+    const categoryElement = document.createElement("p");
+    categoryElement.textContent = "Category: " + post.category;
+
+    // Create an img element for the post image
+    const imageElement = document.createElement("img");
+    imageElement.src = post.image_path;
+    imageElement.alt = post.title;
+
+    // Append title, content, category, and image elements to the post div
+    postElement.appendChild(titleElement);
+    postElement.appendChild(contentElement);
+    postElement.appendChild(categoryElement);
+    postElement.appendChild(imageElement);
+
+    // Append the post div to the posts container
+    postsContainer.appendChild(postElement);
   });
-
-  
+});
