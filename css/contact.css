@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    background-color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+}
+
+img {
+    width: 523px;
+    height: 743px;
+}
+
+.alignCenter {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.seperateUs {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.mainPicture {
+    display: flex;
+    align-items: center;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid gold;
+}
+
