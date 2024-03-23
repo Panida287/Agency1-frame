@@ -27,90 +27,117 @@
     <!--header and nav ends here -->
     <main>
         <h1>Book sessions with us!</h1>
-        <form class="booking-form">
-            <div class="name-group">
+
+        <div class="booking-container">
+
+            <form>
                 <p class="name-group-title">Client´s Name</p>
-                <div class="name-inputs">
-                    <label for="firstName">First Name:</label>
-                    <input type="text" id="firstName" name="firstName" required placeholder="First name" />
-                    <label for="lastName">Last Name:</label>
-                    <input type="text" id="lastName" name="lastName" required placeholder="Last name" />
+                <div class="horizontal-sort">
+                    <form>
+                        <input type="text" id="firstName" name="firstName" required placeholder="First name" />
+                        <input type="text" id="lastName" name="lastName" required placeholder="Last name" />
+                    </form>
                 </div>
+            </form>
+
+            <form>
+                <p class="time-title">Session Date & Time</p>
+                <div class="horizontal-sort">
+                    <form>
+                        <input type="number" placeholder="Day" name="day" min="1" max="31" required>
+                        <input type="number" placeholder="Month" name="month" min="1" max="12" required>
+                        <input type="number" placeholder="Year" name="year" min="2022" required>
+                        <p class="clock-colon"> At </p>
+                        <input type="number" placeholder="Hour" name="hour" min="0" max="23" required>
+                        <p class="clock-colon"> : </p>
+                        <input type="number" placeholder="Minutes" name="minutes" min="0" max="59" required>
+                    </form>
+                </div>
+            </form>
+
+            <form>
+                <p class="phone-title">Phone Number</p>
+
+                <input type="text" placeholder="Country Code" name="countryCode" required>
+                <input type="tel" placeholder="Phone Number" name="phoneNumber" required>
+            </form>
+            <!--Email input in phone form -->
+            <div class="mail-form">
+                <p class="mail-title">Email</p>
+                <input type="email" placeholder="Email Address" name="email" required>
+            </div>
+            <h2>Session options</h2>
+
+            <section class="form-checklist">
+
+                <!-- <form class="checklist-1"> -->
+                <div class="vertical-sort">
+                    <label for="Headshot">
+                        <input type="checkbox" id="headshot" name="headshot" value="option1" />
+                        Headshot session
+                    </label>
+                    <label for="Tindershots">
+                        <input type="checkbox" id="tinder" name="tindershot" value="option2" />
+                        Tinder shots
+                    </label>
+                    <label for="Wedding-shots">
+                        <input type="checkbox" id="wedding-shots" name="weddingshot" value="option3" />
+                        Wedding shots
+                    </label>
+                    <label for="Boudoir">
+                        <input type="checkbox" id="boudoir" name="boudoir-shots" value="option4" />
+                        Boudoir
+                    </label>
+                </div>
+                <!-- </form> -->
+
+
+                <!-- <form class="checklist-2"> -->
+                <div class="vertical-sort">
+                    <label for="photo-amount">
+                        <input type="checkbox" id="photo-amount" name="photo-amount" value="option5" />
+                        By amount of photos
+                        <select id="photo-amount-options" name="photo-amount-options">
+                            <option value="10">10 photos</option>
+                            <option value="20">20 photos</option>
+                            <option value="30">30 photos</option>
+                        </select>
+                    </label>
+
+                    <label for="Half day">
+                        <input type="checkbox" id="half-day" name="half-day" value="option6" />
+                        Half day
+                    </label>
+                    <label for="Full day">
+                        <input type="checkbox" id="full-day" name="full-day" value="option7" />
+                        Full day
+                    </label>
+                    <label for="photographer">
+                        Photographer
+                        <select id="photographer-options" name="photographer-options">
+                            <option value="berken">Berken</option>
+                            <option value="kenneth">Kenneth</option>
+                            <option value="helene">Helene</option>
+                            <option value="panida">Panida</option>
+                            <option value="patrick">Patrick</option>
+                        </select>
+                    </label>
+
+                </div>
+                <!-- </form> -->
+            </section>
+
+            <div class="requests-form">
+                <p class="request-title">Other request & information</p>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="3" required placeholder="Extra information"></textarea>
             </div>
 
-            <div class="mail-tab">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="Add your email" />
-            </div>
-            <div>
-                <label for="date">dd/mm/yyy:</label>
-                <input type="date" id="date" name="date" required placeholder="Date" </div>
-                <div class="form-row">
-                    <div class="form-cell">
-                        <label for="time">Time</label>
-                        <input placeholder="A time input" type="time" id="time" value="" />
-                    </div>
-                    <div>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="3" required
-                            placeholder="Extra information"></textarea>
-                    </div>
-                    <div>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="3" required
-                            placeholder="Extra information"></textarea>
-                    </div>
-                    <div>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="3" required
-                            placeholder="Extra information"></textarea>
-                    </div>
-                    <div>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="3" required
-                            placeholder="Extra information"></textarea>
-                    </div>
-                    <div>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="3" required
-                            placeholder="Extra information"></textarea>
-                    </div>
-                    <div>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="3" required
-                            placeholder="Extra information"></textarea>
-                    </div>
-                    <div class="form-list">
-                        <div class="form-cell">
-                            <label>Session options</label>
-                            <label for="Headshot">
-                                <input type="radio" id="head-sess" name="headshot" value="option1" />
-                                Headshot session</label>
-                            <label for="Tindershots">
-                                <input type="radio" id="tinder" name="tindershot" value="option2" />
-                                Tinder shots</label>
-                            <label for="photo-amount">
-                                <input type="radio" id="photo-amount" name="photo-amount" value="option3" />
-                                By amount of photos</label>
-                            <label for="Half-day">
-                                <input type="radio" id="photo-length" name="half-day" value="option4" />
-                                Half day</label>
-                            <label for="Boudoir">
-                                <input type="radio" id="Boudoir" name="boudoir-shots" value="option5" />
-                                Boudoir session</label>
-                            <label for="Photographer">
-                                <input type="radio" id="photo" name="photographer" value="option6" />
-                                Photographer</label>
-                        </div>
+            <button type="submit">Submit</button>
+            <!--will change this to a class -->
 
-                        <div>
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="3" required
-                                placeholder="Extra information"></textarea>
-                        </div>
+        </div>
 
-                        <button type="submit">Submit</button>
-                        <!--will change this to a class -->
         </form>
     </main>
     <script src="javascript/booking.js"></script>
