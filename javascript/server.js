@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const postElement = document.createElement("div");
     postElement.classList.add("post");
 
-    // Create an h2 element for the post title
+    // Create a h2 element for the post title
     const titleElement = document.createElement("h2");
     titleElement.textContent = post.title;
 
