@@ -224,9 +224,10 @@ footer {
         top: 80px;
         gap: 20px;
         flex-direction: column;
-        background: rgba(0, 0, 0, 0.50);
+        background: rgba(0, 0, 0, 0.70);
         transition: 0.3s;
         height: 250px;
+        backdrop-filter: blur(6px);
     }
 
     nav.active {
