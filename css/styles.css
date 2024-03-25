@@ -3,6 +3,7 @@
     text-decoration: none;
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -30,6 +31,7 @@ main {
     color: white;
     cursor: pointer;
     margin: 10px;
+    transition: 0.2s ease;
 }
 
 .btn:hover {
@@ -70,6 +72,25 @@ h6 {
     font-size: 16px;
 }
 
+p {
+    font-family: "lato", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.p2 {
+    font-size: 16px;
+}
+
+.p-mobile {
+    font-size: 14px;
+}
+
+.polaroid-font {
+    font-family: "caveat", sans-serif;
+    color: black;
+}
+
 /*header*/
 
 nav a {
@@ -77,6 +98,7 @@ nav a {
     font-size: 16px;
     padding: 0 10px;
     position: relative;
+    transition: 0.7s ease;
 }
 
 nav a:after{
@@ -121,6 +143,21 @@ nav {
     cursor: pointer;
 }
 
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
 /*footer*/
 
 footer {
@@ -133,8 +170,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
-    margin-left: 40px;
+    gap: 16px;
+    margin: 40px;
 }
 
 .fb-logo {
@@ -149,4 +186,51 @@ footer {
     height: 44px;
     background-image: url("../assets/logo/ig-logo.png");
     cursor: pointer;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+@media (max-width: 830px) {
+    nav a {
+        font-size: 14px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .hamburger {
+        display: block;
+        margin: 40px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    nav {
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        gap: 20px;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.70);
+        transition: 0.3s;
+        height: 250px;
+        backdrop-filter: blur(6px);
+    }
+
+    nav.active {
+        left: 0;
+    }
 }
