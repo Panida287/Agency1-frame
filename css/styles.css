@@ -192,6 +192,27 @@ footer {
     font-size: 14px;
 }
 
+.polaroid-bg {
+    background: white;
+    border-radius: 0 0 8px 8px;
+    width: 169px;
+    height: 212px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    transition: top ease-in 0.5s;
+}
+
+.polaroid-bg:hover {
+    position: relative;
+    top: -10px;
+    box-shadow: 0 4px 20px 0 #FFF;
+    transition: ease-in 0.2s;
+}
+
 @media (max-width: 830px) {
     nav a {
         font-size: 14px;
