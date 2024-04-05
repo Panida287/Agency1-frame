@@ -1,166 +1,202 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
+.nav-menu > :nth-child(4) {
+    color: #FFB24B;
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
-body {
-    background-color: grey;
+.overlay {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -2;
+    top: 118px;
 }
 
-/* Header and nav bar starts here / should be the same head nav on all pages */
-
-header {
-    background-color: #333;
-    /* Placeholder */
-    color: #fff;
-    /* placeholder color ** note to change ** */
-    padding: 36px 146px;
-    /* note to change this as they are only placeholder */
-    text-align: center;
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-/* CSS for navigation */
-nav {
+h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #FFB24B;
 }
 
-.booking-container {
-    padding: 22px 75px;
+.container {
+    border-radius: 16px;
+    border: 1px solid #FFB24B;
+    padding: 40px;
+    margin: 40px auto;
+    grid-row-gap: 20px;
+    width: 90%;
+    max-width: 750px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline;
-    margin-right: 20px;
-    /* Adjust spacing between menu items */
-}
-
-nav a {
-    color: #fff;
-    /* Change text color as needed */
-    text-decoration: none;
-    font-size: 18px;
-    /* Adjust font size as needed */
-}
-
-nav a:hover {
-    text-decoration: underline;
-    /* Add underline on hover */
-}
-
-/* All title and p classes are in one place - from here*/
-h1 {
-    color: white;
-    text-align: center;
-}
-
-.name-group-title {
-    color: white;
-    align-self: flex-start;
-}
-
-.time-title {
-    color: white;
-    flex-direction: left;
-    margin-bottom: 10px;
-}
-
-.phone-title {
-    color: white;
-    flex-direction: left;
-}
-
-.clock-colon {
-    color: white;
-    padding: 10px;
-}
-
-.mail-title {
-    color: white;
-}
-
-.request-title {
-    color: white;
-}
-
-.checklist-title {
-    color: black;
-}
-
-.booking-form {
-    /* background-color: yellow; */
-}
-
-.horizontal-sort {
-    display: flex;
-    width: 100%;
-}
-
-.vertical-sort{
-    display: flex;
-    flex-wrap: wrap; 
-    flex-direction: column;
-    background-color: red;
-    width: 100%;
-}
-
-
-.time-date-form {
-    display: flex;
-}
-
-.mail-form {
-    display: flex;
-}
-
-.name-group label {
-    margin-bottom: 8px;
-}
-
-/* input, */
-textarea {
-    width: 100%;
-    padding: 10px;
-}
-
-.form-checklist {
-    background-color: grey;
-    display: flex;
-}
-
-.time-txt {
-    color: white;
-}
-
-button {
-    /* submit button for the form*/
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
+label {
+    color: #FFB24B;
+    font-family: "lato", sans-serif;
     font-size: 16px;
-    display: block;
-    border-radius: 8%;
 }
 
-button:hover {
-    background-color: #2980b9;
+.payment-label {
+    color: white;
 }
 
-/* Main content ends here / Footer content starts here */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 36px 146px;
-    position: sticky;
-    bottom: 0;
-    width: 100%;
+input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    border-radius: 8px;
+    padding: 0 8px;
+    outline: none;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.name-input-area {
+    display: flex;
+    gap: 8px;
+}
+
+#name-input,
+#last-name-input {
+    width: 50%;
+}
+
+.date-time {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.date-time-input {
+    display: flex;
+    gap: 8px;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#phone-number {
+    width: 50%;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#email {
+    width: 50%;
+}
+
+.p2 {
+    color: #FFB24B;
+    margin: 8px 0;
+}
+
+.type-of-session-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#photo-amount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.by-photo-amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.session-type,
+.detail {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#photographer-dropdown-label {
+    margin: 8px 0;
+}
+
+#photographers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.photographer-selection {
+    display: flex;
+    gap: 40px;
+}
+
+#photographer-link {
+    color: #FFB24B;
+    text-decoration: underline;
+}
+
+.request {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+#request {
+    height: 80px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.policy {
+    color: #FFB24B;
+    text-decoration: underline;
+}
+
+@media (max-width: 599px) {
+    .type-of-session-container {
+        grid-template-columns: 1fr;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    #photo-amount {
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+    }
+
+    #phone-number,
+    #email {
+        width: 100%;
+    }
 }
