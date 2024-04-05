@@ -230,13 +230,9 @@ footer {
     nav a {
         font-size: 14px;
     }
-
-    nav {
-        gap: 20px;
-    }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 739px) {
     .hamburger {
         display: block;
         margin: 40px;
@@ -254,17 +250,27 @@ footer {
 
     nav {
         position: fixed;
-        left: -100%;
-        top: 80px;
+        right: -100%;
         gap: 20px;
+        top: 75px;
         flex-direction: column;
-        background: rgba(0, 0, 0, 0.70);
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.5);
         transition: 0.3s;
-        height: 250px;
-        backdrop-filter: blur(6px);
+        z-index: 2;
+        height: 300px;
+        margin: 0;
+        backdrop-filter: blur(10px);
     }
 
     nav.active {
-        left: 0;
+        right: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .copyright {
+        text-align: center;
+        font-size: 12px;
     }
 }
