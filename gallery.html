@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/styles.css"/>
     <link rel="stylesheet" href="css/gallery.css"/>
     <script src="javascript/nav.js" defer></script>
+    <script src="javascript/gallery.js" defer></script>
     <title>Frame Photography</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,79 +42,109 @@
 
 <main>
     <div class="session">
-        <a class="polaroid-bg">
-            <div id="headshot"></div>
-            <h3>Headshots</h3>
-        </a>
-        <a class="polaroid-bg">
-            <div id="tinder"></div>
-            <h3>Tinder</h3>
-        </a>
-        <a class="polaroid-bg">
-            <div id="wedding"></div>
-            <h3>Wedding</h3>
-        </a>
-        <a class="polaroid-bg">
-            <div id="boudoir"></div>
-            <h3>Boudoir</h3>
-        </a>
+        <button type="button" id="headshot-btn" class="polaroid-bg">
+            <span id="headshot"></span>
+            <span class="polaroid-font">Headshots</span>
+        </button>
+        <button type="button" id="tinder-btn" class="polaroid-bg">
+            <span id="tinder"></span>
+            <span class="polaroid-font">Tinder</span>
+        </button>
+        <button type="button" id="wedding-btn" class="polaroid-bg">
+            <span id="wedding"></span>
+            <span class="polaroid-font">Wedding</span>
+        </button>
+        <button type="button" id="boudoir-btn" class="polaroid-bg">
+            <span id="boudoir"></span>
+            <span class="polaroid-font">Boudoir</span>
+        </button>
     </div>
     <div class="gallery-bg">
-        <h1>Headshot</h1>
-        <div class="gallery">
-            <div class="img">
-                <img alt="" src="assets/headshots/headshots1.jpg">
+        <div id="gallery">
+            <h1 id="header">
+                Headshots
+            </h1>
+            <div id="headshot-images">
+                <div class="img">
+                    <img alt="" src="assets/headshots/headshots1.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/headshots/headshots2.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/headshots/headshots3.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/headshots/headshots4.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/headshots/headshots5.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/headshots/headshots6.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/headshots/headshots7.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/headshots/headshots8.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/headshots/headshots9.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/headshots/headshots10.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/headshots/headshots11.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/headshots/headshots12.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/headshots/headshots13.jpg">
+                </div>
             </div>
-            <div class="img">
-                <img alt="" src="assets/headshots/headshots2.jpg">
-            </div>
-            <div class="img">
-                <img alt="" src="assets/headshots/headshots3.jpg">
-            </div>
-            <div class="img">
-                <img alt="" src="assets/headshots/headshots4.jpg">
-            </div>
-            <div class="img">
-                <img alt="" src="assets/headshots/headshots5.jpg">
-            </div>
-            <div class="img">
-                <img alt="" src="assets/headshots/headshots6.jpg">
-            </div>
-            <div class="img">
-                <img alt="" src="assets/headshots/headshots7.jpg">
-            </div>
-            <div class="img">
-                <img alt="" src="assets/headshots/headshots8.jpg">
-            </div>
-            <div class="img">
-                <img alt="" src="assets/headshots/headshots9.jpg">
-            </div>
-            <div class="img">
-                <img alt="" src="assets/headshots/headshots10.jpg">
-            </div>
-            <div class="img">
-                <img alt="" src="assets/headshots/headshots11.jpg">
-            </div>
-            <div class="img">
-                <img alt="" src="assets/headshots/headshots12.jpg">
-            </div>
-            <div class="img">
-                <img alt="" src="assets/headshots/headshots13.jpg">
-            </div>
-            <div class="img">
-                <img alt="" src="assets/tinder/tinder1.jpg">
-            </div>
-            <div class="img">
-                <img alt="" src="assets/tinder/tinder2.jpg">
-            </div>
-            <div class="img">
-                <img alt="" src="assets/tinder/tinder3.jpg">
-            </div>
-            <div class="img">
-                <img alt="" src="assets/tinder/tinder4.jpg">
-            </div>
-            <div class="img">
-                <img alt="" src="assets/tinder/tinder5.jpg">
+            <div id="tinder-images">
+                <div class="img">
+                    <img alt="" src="assets/tinder/tinder1.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/tinder/tinder2.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/tinder/tinder3.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/tinder/tinder4.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/tinder/tinder5.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/tinder/tinder6.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/tinder/tinder7.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/tinder/tinder8.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/tinder/tinder9.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/tinder/tinder10.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/tinder/tinder11.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/tinder/tinder12.jpg">
+                </div>
+                <div class="img">
+                    <img alt="" src="assets/tinder/tinder13.jpg">
+                </div>
             </div>
         </div>
     </div>

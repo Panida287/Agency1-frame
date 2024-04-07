@@ -18,7 +18,7 @@ h3 {
 }
 
 #headshot {
-    background: url("../assets/tinder/tinder1.jpg") no-repeat 0 0 / cover;
+    background: url("../assets/headshots/headshots1.jpg") no-repeat 0 0 / cover;
     width: 144px;
     height: 159px;
 }
@@ -30,13 +30,13 @@ h3 {
 }
 
 #wedding {
-    background: url("../assets/tinder/tinder3.jpg") no-repeat 0 0 / cover;
+    background: url("../assets/wedding/wedding3.jpg") no-repeat 0 0 / cover;
     width: 144px;
     height: 159px;
 }
 
 #boudoir {
-    background: url("../assets/tinder/tinder4.jpg") no-repeat 0 0 / cover;
+    background: url("../assets/boudoir/boudoir4.jpg") no-repeat 0 0 / cover;
     width: 144px;
     height: 159px;
 }
@@ -54,7 +54,7 @@ h1 {
     margin: 20px;
 }
 
-.gallery {
+#headshot-images {
     position: relative;
     height: auto;
     width: 90%;
@@ -67,32 +67,32 @@ h1 {
     grid-auto-flow: dense;
 }
 
-.gallery .img {
+.img {
     position: relative;
     height: 100%;
     width: 100%;
     overflow: hidden;
 }
 
-.gallery .img:first-child {
+.img:first-child {
     grid-column-start: span 2;
     grid-row-start: span 2;
 }
 
-.gallery .img:nth-child(2n+3) {
+.img:nth-child(2n+3) {
     grid-row-start: span 2;
 }
 
-.gallery .img:nth-child(4n+5) {
+.img:nth-child(4n+5) {
     grid-row-start: span 2;
     grid-column-start: span 2;
 }
 
-.gallery .img:nth-child(6n+7) {
+.img:nth-child(6n+7) {
     grid-row-start: span 1;
 }
 
-.gallery .img:nth-child(8n+9) {
+.img:nth-child(8n+9) {
     grid-column-start: span 1;
     grid-row-start: span 1;
 }
@@ -104,7 +104,7 @@ h1 {
 }
 
 @media (max-width: 800px) {
-    .gallery {
+    #gallery {
         grid-template-columns: repeat(3, auto);
     }
 }
@@ -115,7 +115,7 @@ h1 {
         margin-bottom: 40px;
     }
 
-    .gallery {
+    #headshot-images {
         grid-template-columns: repeat(2, auto);
     }
 
@@ -138,8 +138,7 @@ h1 {
         height: 100px;
     }
 
-    .gallery,
-    .gallery img {
+    #headshot-images {
         display: block;
     }
 
