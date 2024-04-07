@@ -54,7 +54,13 @@ h1 {
     margin: 20px;
 }
 
-#headshot-images {
+#tinder-images,
+#wedding-images,
+#boudoir-images {
+    display: none;
+}
+
+.images-result {
     position: relative;
     height: auto;
     width: 90%;
@@ -115,7 +121,7 @@ h1 {
         margin-bottom: 40px;
     }
 
-    #headshot-images {
+    .images-result {
         grid-template-columns: repeat(2, auto);
     }
 
@@ -138,7 +144,7 @@ h1 {
         height: 100px;
     }
 
-    #headshot-images {
+    .images-result {
         display: block;
     }
 
