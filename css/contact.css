@@ -8,6 +8,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 40px;
 }
 
 .image img {
@@ -151,7 +152,7 @@ main {
 
 @media (max-width: 964px) {
     body {
-        background: url("../assets/wedding/g-1242.jpg") no-repeat 0 0 / cover;
+        background: url("../assets/wedding/wedding12.jpg") no-repeat 0 0 / cover;
     }
 
     .image {
