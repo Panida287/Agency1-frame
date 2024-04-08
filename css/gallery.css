@@ -52,6 +52,13 @@ h3 {
     height: 159px;
 }
 
+.active {
+    position: relative;
+    top: -10px;
+    box-shadow: 0 4px 20px 0 #FFF;
+    transition: ease-in 0.2s;
+}
+
 .gallery-bg {
     background: #FFF0DD;
 }
@@ -100,19 +107,19 @@ h1 {
     grid-row-start: span 2;
 }
 
-/*.img:nth-child(4n+5) {*/
-/*    grid-row-start: span 2;*/
-/*    grid-column-start: span 2;*/
-/*}*/
+.img:nth-child(4n+5) {
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+}
 
-/*.img:nth-child(6n+7) {*/
-/*    grid-row-start: span 1;*/
-/*}*/
+.img:nth-child(6n+7) {
+    grid-row-start: span 1;
+}
 
-/*.img:nth-child(8n+9) {*/
-/*    grid-column-start: span 1;*/
-/*    grid-row-start: span 1;*/
-/*}*/
+.img:nth-child(8n+9) {
+    grid-column-start: span 1;
+    grid-row-start: span 1;
+}
 
 .img img {
     height: 100%;

@@ -1,3 +1,4 @@
+// for session buttons to filter
 const buttons = [
     { button: document.getElementById('headshot-btn'), headerText: "Headshots", imagesId: 'headshot-images' },
     { button: document.getElementById('tinder-btn'), headerText: "Tinder", imagesId: 'tinder-images' },
@@ -16,3 +17,14 @@ buttons.forEach(({ button, headerText, imagesId }) => {
         document.getElementById(imagesId).style.display = 'grid';
     });
 });
+
+// for adding and removing active class
+
+const sessionBtn = document.querySelectorAll('.polaroid-bg');
+
+sessionBtn.forEach(sessionBtn => {
+    sessionBtn.addEventListener('click', () => {
+        document.querySelector('.active')?.classList.remove('active');
+        sessionBtn.classList.add('active');
+    })
+})
