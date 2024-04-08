@@ -13,12 +13,13 @@ main {
 
 .show-case {
     height: 450px;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin-right: 80px;
-    gap: 20px;
-    transition: 0.7s ease;
+    margin-left: 20px;
+    gap: 40px;
+    align-self: center;
 }
 
 .welcome-text {
@@ -34,25 +35,25 @@ main {
 }
 
 #headshot {
-    background: url("../assets/tinder/tinder1.jpg") no-repeat 0 0 / cover;
+    background: url("../assets/headshots/headshots2.jpeg") no-repeat 0 0 / cover;
     width: 144px;
     height: 159px;
 }
 
 #tinder {
-    background: url("../assets/tinder/tinder2.jpg") no-repeat 0 0 / cover;
+    background: url("../assets/tinder/tinder2.jpeg") no-repeat 0 0 / cover;
     width: 144px;
     height: 159px;
 }
 
 #wedding {
-    background: url("../assets/tinder/tinder3.jpg") no-repeat -60px 0 / cover;
+    background: url("../assets/wedding/wedding3.jpeg") no-repeat 0 -60px / cover;
     width: 144px;
     height: 159px;
 }
 
 #boudoir {
-    background: url("../assets/tinder/tinder4.jpg") no-repeat 0 0 / cover;
+    background: url("../assets/boudoir/boudoir1.jpeg") no-repeat 0 0 / cover;
     width: 144px;
     height: 159px;
 }
@@ -79,14 +80,17 @@ h3 {
 
 @media (max-width: 890px) {
     main {
-        flex-direction: column;
+        display: grid;
+    }
+
+    .show-case {
+        justify-self: center;
     }
 
     .welcome-text {
         margin-bottom: 40px;
         margin-right: 0;
         justify-content: center;
-
     }
 
     .show-case {
