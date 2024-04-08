@@ -11,8 +11,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png"/>
     <link rel="stylesheet" href="css/styles.css"/>
     <link rel="stylesheet" href="css/gallery.css"/>
+    <link rel="stylesheet" href="css/lightbox.css"/>
     <script src="javascript/nav.js" defer></script>
     <script src="javascript/gallery.js" defer></script>
+    <script src="javascript/lightbox-plus-jquery.js" defer></script>
     <title>Frame Photography</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,7 +44,7 @@
 
 <main>
     <div class="session">
-        <button type="button" id="headshot-btn" class="polaroid-bg">
+        <button type="button" id="headshot-btn" class="polaroid-bg active">
             <span id="headshot"></span>
             <span class="polaroid-font">Headshots</span>
         </button>
@@ -66,166 +68,270 @@
             </h1>
             <div class="images-result" id="headshot-images">
                 <div class="img">
-                    <img alt="" src="assets/headshots/headshots1.jpeg">
+                    <a href="assets/headshots/headshots1.jpeg" data-lightbox="headshot">
+                        <img alt="" src="assets/headshots/headshots1.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/headshots/headshots2.jpeg">
+                    <a href="assets/headshots/headshots2.jpeg" data-lightbox="headshot">
+                        <img alt="" src="assets/headshots/headshots2.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/headshots/headshots3.jpeg">
+                    <a href="assets/headshots/headshots3.jpeg" data-lightbox="headshot">
+                        <img alt="" src="assets/headshots/headshots3.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/headshots/headshots4.jpeg">
+                    <a href="assets/headshots/headshots4.jpeg" data-lightbox="headshot">
+                        <img alt="" src="assets/headshots/headshots4.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/headshots/headshots5.jpeg">
+                    <a href="assets/headshots/headshots5.jpeg" data-lightbox="headshot">
+                        <img alt="" src="assets/headshots/headshots5.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/headshots/headshots6.jpeg">
+                    <a href="assets/headshots/headshots6.jpeg" data-lightbox="headshot">
+                        <img alt="" src="assets/headshots/headshots6.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/headshots/headshots7.jpeg">
+                    <a href="assets/headshots/headshots7.jpeg" data-lightbox="headshot">
+                        <img alt="" src="assets/headshots/headshots7.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/headshots/headshots8.jpeg">
+                    <a href="assets/headshots/headshots8.jpeg" data-lightbox="headshot">
+                        <img alt="" src="assets/headshots/headshots8.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/headshots/headshots9.jpeg">
+                    <a href="assets/headshots/headshots9.jpeg" data-lightbox="headshot">
+                        <img alt="" src="assets/headshots/headshots9.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/headshots/headshots10.jpeg">
+                    <a href="assets/headshots/headshots10.jpeg" data-lightbox="headshot">
+                        <img alt="" src="assets/headshots/headshots10.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/headshots/headshots11.jpeg">
+                    <a href="assets/headshots/headshots11.jpeg" data-lightbox="headshot">
+                        <img alt="" src="assets/headshots/headshots11.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/headshots/headshots12.jpeg">
+                    <a href="assets/headshots/headshots12.jpeg" data-lightbox="headshot">
+                        <img alt="" src="assets/headshots/headshots12.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/headshots/headshots13.jpeg">
+                    <a href="assets/headshots/headshots13.jpeg" data-lightbox="headshot">
+                        <img alt="" src="assets/headshots/headshots13.jpeg">
+                    </a>
                 </div>
             </div>
             <div class="images-result" id="tinder-images">
                 <div class="img">
-                    <img alt="" src="assets/tinder/tinder1.jpeg">
+                    <a href="assets/tinder/tinder1.jpeg" data-lightbox=tinder>
+                        <img alt="" src="assets/tinder/tinder1.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/tinder/tinder2.jpeg">
+                    <a href="assets/tinder/tinder2.jpeg" data-lightbox=tinder>
+                        <img alt="" src="assets/tinder/tinder2.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/tinder/tinder3.jpeg">
+                    <a href="assets/tinder/tinder3.jpeg" data-lightbox=tinder>
+                        <img alt="" src="assets/tinder/tinder3.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/tinder/tinder4.jpeg">
+                    <a href="assets/tinder/tinder4.jpeg" data-lightbox=tinder>
+                        <img alt="" src="assets/tinder/tinder4.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/tinder/tinder5.jpeg">
+                    <a href="assets/tinder/tinder5.jpeg" data-lightbox=tinder>
+                        <img alt="" src="assets/tinder/tinder5.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/tinder/tinder6.jpeg">
+                    <a href="assets/tinder/tinder6.jpeg" data-lightbox=tinder>
+                        <img alt="" src="assets/tinder/tinder6.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/tinder/tinder7.jpeg">
+                    <a href="assets/tinder/tinder7.jpeg" data-lightbox=tinder>
+                        <img alt="" src="assets/tinder/tinder7.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/tinder/tinder8.jpeg">
+                    <a href="assets/tinder/tinder8.jpeg" data-lightbox=tinder>
+                        <img alt="" src="assets/tinder/tinder8.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/tinder/tinder9.jpeg">
+                    <a href="assets/tinder/tinder9.jpeg" data-lightbox=tinder>
+                        <img alt="" src="assets/tinder/tinder9.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/tinder/tinder10.jpeg">
+                    <a href="assets/tinder/tinder10.jpeg" data-lightbox=tinder>
+                        <img alt="" src="assets/tinder/tinder10.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/tinder/tinder11.jpeg">
+                    <a href="assets/tinder/tinder11.jpeg" data-lightbox=tinder>
+                        <img alt="" src="assets/tinder/tinder11.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/tinder/tinder12.jpeg">
+                    <a href="assets/tinder/tinder12.jpeg" data-lightbox=tinder>
+                        <img alt="" src="assets/tinder/tinder12.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/tinder/tinder13.jpeg">
+                    <a href="assets/tinder/tinder13.jpeg" data-lightbox=tinder>
+                        <img alt="" src="assets/tinder/tinder13.jpeg">
+                    </a>
                 </div>
             </div>
             <div class="images-result" id="wedding-images">
                 <div class="img">
-                    <img alt="" src="assets/wedding/wedding1.jpeg">
+                    <a href="assets/wedding/wedding1.jpeg" data-lightbox=wedding>
+                        <img alt="" src="assets/wedding/wedding1.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/wedding/wedding2.jpeg">
+                    <a href="assets/wedding/wedding2.jpeg" data-lightbox=wedding>
+                        <img alt="" src="assets/wedding/wedding2.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/wedding/wedding3.jpeg">
+                    <a href="assets/wedding/wedding3.jpeg" data-lightbox=wedding>
+                        <img alt="" src="assets/wedding/wedding3.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/wedding/wedding4.jpeg">
+                    <a href="assets/wedding/wedding4.jpeg" data-lightbox=wedding>
+                        <img alt="" src="assets/wedding/wedding4.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/wedding/wedding5.jpeg">
+                    <a href="assets/wedding/wedding5.jpeg" data-lightbox=wedding>
+                        <img alt="" src="assets/wedding/wedding5.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/wedding/wedding6.jpeg">
+                    <a href="assets/wedding/wedding6.jpeg" data-lightbox=wedding>
+                        <img alt="" src="assets/wedding/wedding6.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/wedding/wedding7.jpeg">
+                    <a href="assets/wedding/wedding7.jpeg" data-lightbox=wedding>
+                        <img alt="" src="assets/wedding/wedding7.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/wedding/wedding8.jpeg">
+                    <a href="assets/wedding/wedding8.jpeg" data-lightbox=wedding>
+                        <img alt="" src="assets/wedding/wedding8.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/wedding/wedding9.jpeg">
+                    <a href="assets/wedding/wedding9.jpeg" data-lightbox=wedding>
+                        <img alt="" src="assets/wedding/wedding9.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/wedding/wedding10.jpeg">
+                    <a href="assets/wedding/wedding10.jpeg" data-lightbox=wedding>
+                        <img alt="" src="assets/wedding/wedding10.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/wedding/wedding11.jpeg">
+                    <a href="assets/wedding/wedding11.jpeg" data-lightbox=wedding>
+                        <img alt="" src="assets/wedding/wedding11.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/wedding/wedding12.jpeg">
+                    <a href="assets/wedding/wedding12.jpeg" data-lightbox=wedding>
+                        <img alt="" src="assets/wedding/wedding12.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/wedding/wedding13.jpeg">
+                    <a href="assets/wedding/wedding13.jpeg" data-lightbox=wedding>
+                        <img alt="" src="assets/wedding/wedding13.jpeg">
+                    </a>
                 </div>
             </div>
             <div class="images-result" id="boudoir-images">
                 <div class="img">
-                    <img alt="" src="assets/boudoir/boudoir1.jpeg">
+                    <a href="assets/boudoir/boudoir1.jpeg" data-lightbox=boudoir>
+                        <img alt="" src="assets/boudoir/boudoir1.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/boudoir/boudoir2.jpeg">
+                    <a href="assets/boudoir/boudoir2.jpeg" data-lightbox=boudoir>
+                        <img alt="" src="assets/boudoir/boudoir2.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/boudoir/boudoir3.jpeg">
+                    <a href="assets/boudoir/boudoir3.jpeg" data-lightbox=boudoir>
+                        <img alt="" src="assets/boudoir/boudoir3.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/boudoir/boudoir4.jpeg">
+                    <a href="assets/boudoir/boudoir4.jpeg" data-lightbox=boudoir>
+                        <img alt="" src="assets/boudoir/boudoir4.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/boudoir/boudoir5.jpeg">
+                    <a href="assets/boudoir/boudoir5.jpeg" data-lightbox=boudoir>
+                        <img alt="" src="assets/boudoir/boudoir5.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/boudoir/boudoir6.jpeg">
+                    <a href="assets/boudoir/boudoir6.jpeg" data-lightbox=boudoir>
+                        <img alt="" src="assets/boudoir/boudoir6.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/boudoir/boudoir7.jpeg">
+                    <a href="assets/boudoir/boudoir7.jpeg" data-lightbox=boudoir>
+                        <img alt="" src="assets/boudoir/boudoir7.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/boudoir/boudoir8.jpeg">
+                    <a href="assets/boudoir/boudoir8.jpeg" data-lightbox=boudoir>
+                        <img alt="" src="assets/boudoir/boudoir8.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/boudoir/boudoir9.jpeg">
+                    <a href="assets/boudoir/boudoir9.jpeg" data-lightbox=boudoir>
+                        <img alt="" src="assets/boudoir/boudoir9.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/boudoir/boudoir10.jpeg">
+                    <a href="assets/boudoir/boudoir10.jpeg" data-lightbox=boudoir>
+                        <img alt="" src="assets/boudoir/boudoir10.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/boudoir/boudoir11.jpeg">
+                    <a href="assets/boudoir/boudoir11.jpeg" data-lightbox=boudoir>
+                        <img alt="" src="assets/boudoir/boudoir11.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/boudoir/boudoir12.jpeg">
+                    <a href="assets/boudoir/boudoir12.jpeg" data-lightbox=boudoir>
+                        <img alt="" src="assets/boudoir/boudoir12.jpeg">
+                    </a>
                 </div>
                 <div class="img">
-                    <img alt="" src="assets/boudoir/boudoir12.jpeg">
+                    <a href="assets/boudoir/boudoir13.jpeg" data-lightbox=boudoir>
+                        <img alt="" src="assets/boudoir/boudoir13.jpeg">
+                    </a>
                 </div>
             </div>
         </div>

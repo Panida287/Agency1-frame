@@ -28,6 +28,11 @@ h3 {
     font-family: "caveat", sans-serif;
 }
 
+#header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 #headshot {
     background: url("../assets/headshots/headshots1.jpeg") no-repeat 0 0 / cover;
     width: 144px;
@@ -160,6 +165,10 @@ h1 {
     .polaroid-bg {
         width: 80px;
         height: 100px;
+    }
+
+    .polaroid-font {
+        font-size: 12px;
     }
 
     .images-result {
