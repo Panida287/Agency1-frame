@@ -152,7 +152,7 @@ main {
 
 @media (max-width: 964px) {
     body {
-        background: url("../assets/wedding/wedding12.jpg") no-repeat 0 0 / cover;
+        background: url("../assets/wedding/wedding12.jpeg") no-repeat 0 0 / cover;
     }
 
     .image {
