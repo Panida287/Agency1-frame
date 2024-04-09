@@ -4,13 +4,8 @@
     pointer-events: none;
 }
 
-.overlay {
-    position: absolute;
-    width: 100%;
-    min-height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: -2;
-    top: 118px;
+body {
+    background: url("../assets/background/background1.jpeg") no-repeat 0 0/cover;
 }
 
 main {

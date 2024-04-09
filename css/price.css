@@ -4,6 +4,10 @@
     pointer-events: none;
 }
 
+body {
+    background: url("../assets/background/background7.jpeg") no-repeat 0 0/cover;
+}
+
 main {
     display: grid;
     width: 70%;
