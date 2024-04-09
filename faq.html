@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png"/>
     <link rel="stylesheet" href="css/styles.css"/>
     <link rel="stylesheet" href="css/faq.css"/>
-    <script src="javascript/server.js" defer></script>
+    <script src="javascript/faq.js" defer></script>
     <script src="javascript/nav.js" defer></script>
     <title>panida photography</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,46 +45,129 @@
         <div class="search-bar">
             <input type="text" id="search" placeholder="Search your question">
             <label for="search"></label>
-            <button type="button" class="btn">Search</button>
+            <button type="button" class="btn" id="searchBtn">Search</button>
         </div>
     </div>
 
     <div class="questions">
-        <button class="q-button" id="q1">
-            Q: What types of photography services do you offer?
+        <button class="q-btn" id="q1" data-keyword="type, types, service, offer, kind, kinds">
+            Q : What types of photography services do you offer?
         </button>
-        <button class="q-button" id="q2">
-            Q: Do you provide both indoor and outdoor photography sessions?
+        <div class="answer" id="answer1">
+            <p>
+                A : We offer a diverse range of photography services tailored to meet your needs, including portrait,
+                event, wedding, commercial, and more. Whether it's capturing precious moments or promoting your
+                business, we've got you covered.
+            </p>
+        </div>
+        <button class="q-btn" id="q2" data-keyword="outdoor, indoor, studio, outside">
+            Q : Do you provide both indoor and outdoor photography sessions?
         </button>
-        <button class="q-button" id="q3">
-            Q: How far in advance should I book a photography session with you?
+        <div class="answer" id="answer2">
+            <p>
+                A : Yes, we offer versatile photography sessions that cater to both indoor and outdoor settings. Whether
+                you prefer the intimacy of indoor spaces or the natural beauty of outdoor environments, we'll ensure
+                your vision comes to life.
+            </p>
+        </div>
+        <button class="q-btn" id="q3" data-keyword="advance, far, book, booking, ahead">
+            Q : How far in advance should I book a photography session with you?
         </button>
-        <button class="q-button" id="q4">
-            Q: Can I customize my photography package to fit my specific needs?
+        <div class="answer" id="answer3">
+            <p>
+                A : To secure your preferred date and time, we recommend booking your photography session at least 2 weeks
+                in advance. This allows us to plan meticulously and provide you with the best experience possible.
+            </p>
+        </div>
+        <button class="q-btn" id="q4" data-keyword="customize, customise, specific, special, request">
+            Q : Can I customize my photography package to fit my specific needs?
         </button>
-        <button class="q-button" id="q5">
-            Q: Do you offer photo retouching or editing services?
+        <div class="answer" id="answer4">
+            <p>
+                A : Absolutely! We understand that every client is unique, which is why we offer customizable
+                photography packages tailored to your specific preferences and requirements. Let us know your needs, and
+                we'll create a package that's perfect for you.
+            </p>
+        </div>
+        <button class="q-btn" id="q5" data-keyword="retouch, edit, photoshop">
+            Q : Do you offer photo retouching or editing services?
         </button>
-        <button class="q-button" id="q6">
-            Q: What is the typical turnaround time for receiving edited photos after the
+        <div class="answer" id="answer5">
+            <p>
+                A : Yes, we offer professional photo retouching and editing services to enhance the quality of your images.
+                From color correction to blemish removal, our skilled team will ensure your photos look their absolute
+                best.
+            </p>
+        </div>
+        <button class="q-btn" id="q6" data-keyword="how long, long, wait, after, turnaround, receiving, receive, finished, edited">
+            Q : What is the typical turnaround time for receiving edited photos after the
             session?
         </button>
-        <button class="q-button" id="q7">
-            Q: Do you provide high-resolution digital copies of the photos?
+        <div class="answer" id="answer6">
+            <p>
+                A : Our typical turnaround time for delivering edited photos is 4-8 weeks. We understand the
+                importance of timely delivery, and we strive to provide you with your beautifully edited images
+                promptly.
+            </p>
+        </div>
+        <button class="q-btn" id="q7" data-keyword="high, hd, quality">
+            Q : Do you provide high-resolution digital copies of the photos?
         </button>
-        <button class="q-button" id="q8">
-            Q: Are prints or albums included in the photography package, or are they
+        <div class="answer" id="answer7">
+            <p>
+                Yes, we provide high-resolution digital copies of all the photos from your session. You'll receive your
+                images in a digital format, allowing you to easily print, share, and cherish your memories for years to
+                come.
+            </p>
+        </div>
+        <button class="q-btn" id="q8" data-keyword="print, printed, albums, copy">
+            Q : Are prints or albums included in the photography package, or are they
             available as add-ons?
         </button>
-        <button class="q-button" id="q9">
-            Q: Do you charge extra for travel to different locations for the photo shoot?
+        <div class="answer" id="answer8">
+            <p>
+                A : Our photography packages offer flexibility to suit your needs. While prints and albums are available
+                as add-ons, we also offer packages that include these items. We'll work with you to create a package
+                that aligns with your preferences.
+            </p>
+        </div>
+        <button class="q-btn" id="q9" data-keyword="charge, pay, extra, location, far, travel">
+            Q : Do you charge extra for travel to different locations for the photo shoot?
         </button>
-        <button class="q-button" id="q10">
-            Q: What safety measures do you have in place during photography sessions,
+        <div class="answer" id="answer9">
+            <p>
+                A : Our photography services include travel to your desired location within Oslo. There are
+                no additional charges for travel within this region. For locations outside this area, additional fees
+                may apply.
+            </p>
+        </div>
+        <button class="q-btn" id="q10" data-keyword="covid, covid-19">
+            Q : What safety measures do you have in place during photography sessions,
             especially in light of COVID-19?
         </button>
+        <div class="answer" id="answer10">
+            <p>
+                A : The health and safety of our clients and team are our top priority. In adherence to COVID-19
+                guidelines, we implement stringent safety measures during photography sessions, including wearing masks,
+                practicing social distancing, and sanitizing equipment regularly. Rest assured, we're committed to
+                providing you with a safe and enjoyable experience.
+            </p>
+        </div>
     </div>
 </main>
+
+<footer>
+    <div class="so-me-logos">
+        <a href="#" class="fb-logo"></a>
+        <a href="#" class="ig-logo"></a>
+    </div>
+    <h6 class="copyright">
+        All rights reserved 2024
+    </h6>
+    <a href="index.html" class="link-home">
+        <img alt="logo" class="logo" id="logo" src="assets/logo/frame-logo.png"/>
+    </a>
+</footer>
 
 </body>
 </html>
