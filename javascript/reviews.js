@@ -7,14 +7,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function moveSlider(direction) {
         if (direction === 'next') {
-            currentPosition -= imgWidth; // Move one card forward
+            currentPosition -= imgWidth;
             if (currentPosition < -imgWidth * (totalCards - 3)) {
-                currentPosition = 0; // Reset position to the beginning if reaching the end
+                currentPosition = 0;
             }
         } else {
-            currentPosition += imgWidth; // Move one card backward
+            currentPosition += imgWidth;
             if (currentPosition > 0) {
-                currentPosition = -imgWidth * (totalCards - 3); // Reset position to the end if reaching the beginning
+                currentPosition = -imgWidth * (totalCards - 3); 
             }
         }
 
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
         moveSlider('next');
     });
 
-    // Reset transition and position when transition ends
+
     slider.addEventListener('transitionend', function () {
         if (currentPosition === 0 || currentPosition === -imgWidth * (totalCards - 3)) {
             slider.style.transition = 'none';
