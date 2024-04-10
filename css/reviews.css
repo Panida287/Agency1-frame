@@ -167,7 +167,12 @@ nav {
 .carousel {
     position: relative;
     overflow: hidden;
-    height: 45vh; /* 50% of the viewport height */
+    height: 60vh;
+}
+
+.center-this {
+    display: flex;
+    justify-content: center;
 }
 
 .slider {
@@ -175,9 +180,65 @@ nav {
     transition: transform 0.5s ease;
 }
 
+/* Review-cards */
+.review-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #FFB24B;
+    border-radius: 16px;
+    margin: 20px;
+    width: 365px;
+    height: 214px;
+}
+
+.person-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-top-left-radius: 16px;
+    padding-bottom: 8px;
+    border-bottom-left-radius: 16px;
+}
+
+.person-image {
+    margin-bottom: 10px;
+}
+
+.person-image img {
+    width: 100px;
+    height: 100px;
+}
+
+.review-content {
+    background-color: black;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding: 5px;  
+}
+
+.review-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: white;
+    margin-left: 16px;
+}
+
+.rating {
+    font-size: 18px;
+}
+
+.star {
+    color: gold;
+}
+
 .slider img {
     width: calc(33.33% - 10px);
-    margin-right: 36px;
+    margin-right: 16px;
+    width: 100px;
+    height: 150px;
+    margin-left: 16px;
+    margin-top: 16px;
 }
 
 .controls {
@@ -194,7 +255,7 @@ button {
         justify-content: center;
         align-items: center;
         font-family: "Playfair Display", sans-serif;
-        width: 50px;
+        width: 100px;
         height: 50px;
         border-radius: 50px;
         border: 1px solid white;
@@ -204,16 +265,20 @@ button {
         margin: 10px;
         transition: 0.2s ease;
         border: 1px solid #FFB24B;
-        color: #FFB24B;
+        color: #fff;
         box-shadow: 0 0 5px 0 #FFB24B;
 }
 
 .prev {
     margin-right: 10px;
+    width: 50px;
+    color: #FFB24B;
 }
 
 .next {
     margin-left: 10px;
+    width: 50px;
+    color: #FFB24B;
 }
 
 /* form */
@@ -225,7 +290,7 @@ form {
     align-items: center;
 }
 
-h2 {
+h3 {
     color: #FFB24B;
     margin-bottom: 20px;
     font-family: "Playfair Display", sans-serif;
@@ -236,11 +301,11 @@ h2 {
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .form-group-rating {
-    margin-left: 146px;
+    margin-right: 230px;
 }
 
 .form-input {
