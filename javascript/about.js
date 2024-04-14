@@ -1,4 +1,4 @@
-// for session buttons to filter
+// for buttons to filter
 const buttons = [
     { button: document.getElementById('panida-btn'), introId: 'intro-panida' },
     { button: document.getElementById('helene-btn'), introId: 'intro-helene' },

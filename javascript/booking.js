@@ -5,3 +5,8 @@ window.intlTelInput(input, {
     separateDialCode: true,
     preferredCountries: ["no", "se", "dk", "is", "fi"],
 });
+
+
+
+
+
