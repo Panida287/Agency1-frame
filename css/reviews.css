@@ -164,6 +164,118 @@ p {
     font-size: 14px;
 }
 
+.review-form {
+    display: grid;
+    gap: 16px;
+    margin-top: 40px;
+    grid-template-areas:
+    'header header'
+    'name-label name-input'
+    'email-label email-input'
+    'phone-label phone-input'
+    'rating-label rating'
+    'review-label review-label'
+    'review-msg review-msg'
+    'btn btn';
+}
+
+#name-label,
+#email-label,
+#phone-number-label,
+#rating-label,
+#review-label {
+    font-family: "lato", sans-serif;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.review-input-header {
+    grid-area: header;
+}
+
+#name-label {
+    grid-area: name-label;
+}
+
+#name {
+    grid-area: name-input;
+}
+
+#email-label {
+    grid-area: email-label;
+}
+
+#email {
+    grid-area: email-input;
+}
+
+#phone-number-label {
+    grid-area: phone-label;
+}
+
+#phone-number {
+    grid-area: phone-input;
+}
+
+#rating-label {
+    grid-area: rating-label;
+}
+
+.star-widget {
+    grid-area: rating;
+}
+
+#message-label {
+    grid-area: review-label;
+}
+
+#review-msg {
+    grid-area: review-msg;
+    height: 100px;
+}
+
+.btn-container {
+    grid-area: btn;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star-widget input {
+    display: none;
+}
+
+input {
+    border-radius: 8px;
+    height: 34px;
+    padding-left: 8px;
+    outline: none;
+}
+
+.star-widget label {
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    transition: all 0.2s ease;
+    float: right;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~label {
+    color: #FFB24B;
+}
+
+input:checked ~label {
+    color: #FFB24B;
+}
+
+input#rate-5:checked ~ label {
+    color: #FFB24B;
+    text-shadow: 0 0 20px #FFB24B;
+}
+
 @media (max-width: 1100px) {
     .carousel {
         grid-auto-columns: calc((100%/2) - 12px);

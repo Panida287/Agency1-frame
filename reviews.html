@@ -169,6 +169,35 @@
         <i id="left" class="fa-solid fa-chevron-left"></i>
         <i id="right" class="fa-solid fa-chevron-right"></i>
     </div>
+    <form class="review-form">
+        <h3 class="review-input-header">
+            Write us a review!
+        </h3>
+        <label id="name-label" for="name">Name :</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <label id="email-label" for="email">Email :</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <label id="phone-number-label" for="phone-number">Phone number :</label>
+        <input type="tel" id="phone-number" placeholder="Enter your phone number" required>
+        <p id="rating-label">Rating :</p>
+        <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fas fa-star"></label>
+        </div>
+        <label id="review-label" for="review-msg">Your message</label>
+        <input type="text" id="review-msg" placeholder="Your review" required>
+        <div class="btn-container">
+            <input class="btn" type="submit" value="Submit">
+        </div>
+    </form>
 </main>
 
 <footer>
