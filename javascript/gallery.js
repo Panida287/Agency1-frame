@@ -4,7 +4,6 @@ const buttons = [
     { button: document.getElementById('tinder-btn'), headerText: "Tinder", imagesId: 'tinder-images' },
     { button: document.getElementById('wedding-btn'), headerText: "Wedding", imagesId: 'wedding-images' },
     { button: document.getElementById('boudoir-btn'), headerText: "Boudoir", imagesId: 'boudoir-images' }
-
 ];
 const header = document.getElementById("header");
 
@@ -24,7 +23,7 @@ const sessionBtn = document.querySelectorAll('.polaroid-bg');
 
 sessionBtn.forEach(sessionBtn => {
     sessionBtn.addEventListener('click', () => {
-        document.querySelector('.active')?.classList.remove('active');
-        sessionBtn.classList.add('active');
+        document.querySelector('.active-btn')?.classList.remove('active-btn');
+        sessionBtn.classList.add('active-btn');
     })
 })
