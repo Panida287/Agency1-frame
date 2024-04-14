@@ -51,6 +51,10 @@ const infiniteScroll = () => {
     }
 }
 
+function showAlert() {
+    alert("Thank you for writing us a review!");
+}
+
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);
 carousel.addEventListener("mouseup", dragStop);
