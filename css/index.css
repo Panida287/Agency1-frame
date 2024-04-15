@@ -12,6 +12,10 @@ main {
     padding: 0 40px;
 }
 
+.polaroid-bg {
+    cursor: auto;
+}
+
 .show-case {
     height: 100%;
     width: 100%;
