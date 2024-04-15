@@ -1,39 +1,61 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const slider = document.querySelector('.slider');
-    const imgWidth = slider.clientWidth / 3;
-    const images = slider.querySelectorAll('.review-card');
-    const totalCards = images.length;
-    let currentPosition = 0;
+const carousel = document.querySelector('.carousel');
+const arrowBtn = document.querySelectorAll('.carets i');
+const firstCardWidth = carousel.querySelector('.card').offsetWidth;
+const carouselChildren = [...carousel.children];
 
-    function moveSlider(direction) {
-        if (direction === 'next') {
-            currentPosition -= imgWidth;
-            if (currentPosition < -imgWidth * (totalCards - 3)) {
-                currentPosition = 0;
-            }
-        } else {
-            currentPosition += imgWidth;
-            if (currentPosition > 0) {
-                currentPosition = -imgWidth * (totalCards - 3); 
-            }
-        }
+let isDragging = false, startX, startScrollLeft;
 
-        slider.style.transition = 'transform 0.5s ease-in-out';
-        slider.style.transform = `translateX(${currentPosition}px)`;
+let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+
+carouselChildren.slice(-cardPerView).reverse().forEach(card => {
+    carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+})
+carouselChildren.slice(0, cardPerView).reverse().forEach(card => {
+    carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+})
+
+arrowBtn.forEach(btn => {
+    btn.addEventListener("click", () => {
+        carousel.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth;
+    })
+})
+
+const dragStart = (e) => {
+
+    isDragging = true;
+    carousel.classList.add("dragging");
+    startX = e.pageX;
+    startScrollLeft = carousel.scrollLeft;
+}
+const dragging = (e) => {
+    if(!isDragging) return;
+    carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+}
+
+const dragStop = () => {
+    isDragging = false;
+    carousel.classList.remove("dragging");
+}
+const infiniteScroll = () => {
+    // If the carousel is at the beginning, scroll to the end
+    if(carousel.scrollLeft === 0) {
+        carousel.classList.add("no-transition");
+        carousel.scrollLeft = carousel.scrollWidth - ( 2 * carousel.offsetWidth);
+        carousel.classList.remove("no-transition");
+
+        // If the carousel is at the end, scroll to the beginning
+    } else if (Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+        carousel.classList.add("no-transition");
+        carousel.scrollLeft = carousel.offsetWidth;
+        carousel.classList.remove("no-transition");
     }
+}
 
-    document.querySelector('.prev').addEventListener('click', function () {
-        moveSlider('prev');
-    });
+function showAlert() {
+    alert("Thank you for writing us a review!");
+}
 
-    document.querySelector('.next').addEventListener('click', function () {
-        moveSlider('next');
-    });
-
-
-    slider.addEventListener('transitionend', function () {
-        if (currentPosition === 0 || currentPosition === -imgWidth * (totalCards - 3)) {
-            slider.style.transition = 'none';
-        }
-    });
-});
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("mousemove", dragging);
+carousel.addEventListener("mouseup", dragStop);
+carousel.addEventListener("scroll", infiniteScroll);
