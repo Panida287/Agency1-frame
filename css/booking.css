@@ -1,12 +1,11 @@
 .nav-menu > :nth-child(4) {
-    color: #ffb24b;
+    color: #FFB24B;
     cursor: not-allowed;
     pointer-events: none;
 }
 
 body {
-    background: url("../assets/background/background1.jpeg") no-repeat 0 0 /
-        cover;
+    background: url("../assets/background/background1.jpeg") no-repeat 0 0/cover;
 }
 
 main {
@@ -19,12 +18,12 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffb24b;
+    color: #FFB24B;
 }
 
 .container {
     border-radius: 16px;
-    border: 1px solid #ffb24b;
+    border: 1px solid #FFB24B;
     padding: 40px;
     margin: 40px auto;
     grid-row-gap: 20px;
@@ -36,7 +35,7 @@ h3 {
 }
 
 label {
-    color: #ffb24b;
+    color: #FFB24B;
     font-family: "lato", sans-serif;
     font-size: 16px;
 }
@@ -103,7 +102,7 @@ input {
 }
 
 .p2 {
-    color: #ffb24b;
+    color: #FFB24B;
     margin: 8px 0;
 }
 
@@ -149,7 +148,7 @@ input {
 }
 
 #photographer-link {
-    color: #ffb24b;
+    color: #FFB24B;
     text-decoration: underline;
 }
 
@@ -172,7 +171,7 @@ input {
 }
 
 .policy {
-    color: #ffb24b;
+    color: #FFB24B;
     text-decoration: underline;
 }
 

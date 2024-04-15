@@ -1,303 +1,159 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta
-            name="photography service in oslo"
-            content="get your photos taken professionally"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:image" content="assets/favicon_io" />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="180x180"
-            href="assets/favicon_io/apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="assets/favicon_io/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="assets/favicon_io/favicon-16x16.png"
-        />
-        <link rel="stylesheet" href="css/styles.css" />
-        <link rel="stylesheet" href="css/booking.css" />
-        <script src="javascript/nav.js" defer></script>
-        <script src="javascript/booking.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
-        />
-        <title>Frame Photography</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Allison&family=Caveat:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-            rel="stylesheet"
-        />
-    </head>
 
-    <body>
-        <!--Header and nav starts here -->
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Gallery.html">Gallery</a></li>
-                    <li><a href="price.html">Price</a></li>
-                    <li><a href="booking.html">Book sessions</a></li>
-                    <li><a href="aboutus.html">About us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!--header and nav ends here -->
-        <main>
-            <h1>Book sessions with us!</h1>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="photography service in oslo" content="get your photos taken professionally"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta property="og:image" content="assets/favicon_io"/>
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/booking.css"/>
+    <script src="javascript/nav.js" defer></script>
+    <script src="javascript/booking.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+    <title>Frame Photography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Caveat:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+          rel="stylesheet">
+</head>
 
-            <form class="container">
-                <div class="name">
-                    <label id="name-label" for="name-input"
-                        >Client's Name:</label
-                    >
-                    <label for="last-name-input"></label>
-                    <div class="name-input-area">
-                        <input
-                            id="name-input"
-                            type="text"
-                            placeholder="First name"
-                            required
-                        />
-                        <input
-                            id="last-name-input"
-                            type="text"
-                            placeholder="last name"
-                            required
-                        />
-                    </div>
-                </div>
+<body>
 
-                <div class="date-time">
-                    <label id="date-time-label" for="date-input"
-                        >Session Date & Time:</label
-                    >
-                    <label for="time-input"></label>
-                    <div class="date-time-input">
-                        <input id="date-input" type="date" required />
-                        <input id="time-input" type="time" required />
-                    </div>
-                </div>
+<div class="overlay"></div>
+<header>
+    <a href="index.html" class="link-home">
+        <img alt="logo" class="logo" src="assets/logo/frame-logo.png"/>
+    </a>
+    <nav class="nav-menu">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="price.html">Price</a>
+        <a class="nav-link" href="booking.html">Book</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="reviews.html">Reviews</a>
+    </nav>
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</header>
 
-                <div class="phone">
-                    <label id="phone-number-label" for="phone-number"
-                        >Phone number</label
-                    >
-                    <input
-                        type="tel"
-                        id="phone-number"
-                        placeholder="Phone number"
-                        required
-                    />
-                </div>
-                <div class="email">
-                    <label id="email-label" for="email">Email:</label>
-                    <input
-                        id="email"
-                        type="text"
-                        placeholder="Email"
-                        required
-                    />
-                </div>
-
-                <div class="type-of-session-container">
-                    <div class="type-of-session">
-                        <p class="p2">Type of session</p>
-                        <div class="session-type">
-                            <input
-                                id="headshot"
-                                type="radio"
-                                name="session"
-                                value="headshot session"
-                            />
-                            <label
-                                class="payment-label"
-                                id="headshot-label"
-                                for="headshot"
-                                >Headshot session</label
-                            >
-                        </div>
-                        <div class="session-type">
-                            <input
-                                id="tinder"
-                                type="radio"
-                                name="session"
-                                value="tinder session"
-                            />
-                            <label
-                                class="payment-label"
-                                id="tinder-label"
-                                for="tinder"
-                                >Tinder session</label
-                            >
-                        </div>
-                        <div class="session-type">
-                            <input
-                                id="wedding"
-                                type="radio"
-                                name="session"
-                                value="wedding session"
-                            />
-                            <label
-                                class="payment-label"
-                                id="wedding-label"
-                                for="wedding"
-                                >Wedding session</label
-                            >
-                        </div>
-                        <div class="session-type">
-                            <input
-                                id="boudoir"
-                                type="radio"
-                                name="session"
-                                value="boudoir session"
-                            />
-                            <label
-                                class="payment-label"
-                                id="boudoir-label"
-                                for="boudoir"
-                                >Boudoir session</label
-                            >
-                        </div>
-                    </div>
-                    <div class="session-payment">
-                        <p class="p2">Pay by</p>
-                        <div class="detail" id="photo-amount">
-                            <div class="by-photo-amount">
-                                <input
-                                    id="photo-amount-radio"
-                                    type="radio"
-                                    name="detail"
-                                    value="photo amount"
-                                />
-                                <label
-                                    class="payment-label"
-                                    id="photo-amount-label"
-                                    for="photo-amount-radio"
-                                    >By amount of photos</label
-                                >
-                            </div>
-                            <label for="photo-amount-dropdown"></label>
-                            <select id="photo-amount-dropdown">
-                                <option value="10 photos">
-                                    10 photos 900 NOK
-                                </option>
-                                <option value="20 photos">
-                                    20 photos 1.500 NOK
-                                </option>
-                                <option value="30 photos">
-                                    30 photos 3.500 NOK
-                                </option>
-                            </select>
-                        </div>
-                        <div class="detail">
-                            <input
-                                id="half-day"
-                                type="radio"
-                                name="detail"
-                                value="half day"
-                            />
-                            <label
-                                class="payment-label"
-                                id="half-day-label"
-                                for="half-day"
-                                >Half day</label
-                            >
-                        </div>
-                        <div class="detail">
-                            <input
-                                id="full-day"
-                                type="radio"
-                                name="detail"
-                                value="full day"
-                            />
-                            <label
-                                class="payment-label"
-                                id="full-day-label"
-                                for="full-day"
-                                >Full day</label
-                            >
-                        </div>
-                        <div class="detail" id="photographers">
-                            <label
-                                id="photographer-dropdown-label"
-                                for="photographer-dropdown"
-                                >Preferred photographer:</label
-                            >
-                            <div class="photographer-selection">
-                                <select id="photographer-dropdown">
-                                    <option value="Panida Paethanom">
-                                        Panida Paethanom
-                                    </option>
-                                    <option value="Helene Flått">
-                                        Helene Flått
-                                    </option>
-                                    <option value="Kenneth Sheikh">
-                                        Kenneth Sheikh
-                                    </option>
-                                    <option value="Berken Ates">
-                                        Berken Ates
-                                    </option>
-                                    <option value="Patrick Røthe">
-                                        Patrick Røthe
-                                    </option>
-                                    <option value="No preference">
-                                        No preference
-                                    </option>
-                                </select>
-                                <a id="photographer-link" href="#"
-                                    >See our photographers</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="request">
-                    <label id="request-label" for="request"
-                        >Other request/Description</label
-                    >
-                    <input
-                        id="request"
-                        type="text"
-                        placeholder="your message"
-                    />
-                </div>
-                <div class="btn-container">
-                    <input class="btn" type="submit" value="Submit" />
-                    <a class="policy" href="#">Terms and policy</a>
-                </div>
-            </form>
-        </main>
-        <footer>
-            <div class="so-me-logos">
-                <a href="#" class="fb-logo"></a>
-                <a href="#" class="ig-logo"></a>
+<main>
+    <h3>Book session with us</h3>
+    <form class="container">
+        <div class="name">
+            <label id="name-label" for="name-input">Client's Name:</label>
+            <label for="last-name-input"></label>
+            <div class="name-input-area">
+                <input id="name-input" type="text" placeholder="First name" required>
+                <input id="last-name-input" type="text" placeholder="last name" required>
             </div>
-            <h6 class="copyright">All rights reserved 2024</h6>
-            <a href="index.html" class="link-home">
-                <img
-                    alt="logo"
-                    class="logo"
-                    id="logo-footer"
-                    src="assets/logo/frame-logo.png"
-                />
-            </a>
-        </footer>
-    </body>
+        </div>
+        <div class="date-time">
+            <label id="date-time-label" for="date-input">Session Date & Time:</label>
+            <label for="time-input"></label>
+            <div class="date-time-input">
+                <input id="date-input" type="date" required>
+                <input id="time-input" type="time" required>
+            </div>
+        </div>
+        <div class="phone">
+            <label id="phone-number-label" for="phone-number">Phone number</label>
+            <input type="tel" id="phone-number" placeholder="Phone number" required>
+        </div>
+        <div class="email">
+            <label id="email-label" for="email">Email:</label>
+            <input id="email" type="text" placeholder="Email" required>
+        </div>
+        <div class="type-of-session-container">
+            <div class="type-of-session">
+                <p class="p2">Type of session</p>
+                <div class="session-type">
+                    <input id="headshot" type="radio" name="session" value="headshot session">
+                    <label class="payment-label" id="headshot-label" for="headshot">Headshot session</label>
+                </div>
+                <div class="session-type">
+                    <input id="tinder" type="radio" name="session" value="tinder session">
+                    <label class="payment-label" id="tinder-label" for="tinder">Tinder session</label>
+                </div>
+                <div class="session-type">
+                    <input id="wedding" type="radio" name="session" value="wedding session">
+                    <label class="payment-label" id="wedding-label" for="wedding">Wedding session</label>
+                </div>
+                <div class="session-type">
+                    <input id="boudoir" type="radio" name="session" value="boudoir session">
+                    <label class="payment-label" id="boudoir-label" for="boudoir">Boudoir session</label>
+                </div>
+            </div>
+            <div class="session-payment">
+                <p class="p2">Pay by</p>
+                <div class="detail" id="photo-amount">
+                    <div class="by-photo-amount">
+                        <input id="photo-amount-radio" type="radio" name="detail" value="photo amount">
+                        <label class="payment-label" id="photo-amount-label" for="photo-amount-radio">By amount of
+                            photos</label>
+                    </div>
+                    <label for="photo-amount-dropdown"></label>
+                    <select id="photo-amount-dropdown">
+                        <option value="10 photos">10 photos 900 NOK</option>
+                        <option value="20 photos">20 photos 1.500 NOK</option>
+                        <option value="30 photos">30 photos 3.500 NOK</option>
+                    </select>
+                </div>
+                <div class="detail">
+                    <input id="half-day" type="radio" name="detail" value="half day">
+                    <label class="payment-label" id="half-day-label" for="half-day">Half day</label>
+                </div>
+                <div class="detail">
+                    <input id="full-day" type="radio" name="detail" value="full day">
+                    <label class="payment-label" id="full-day-label" for="full-day">Full day</label>
+                </div>
+                <div class="detail" id="photographers">
+                    <label id="photographer-dropdown-label" for="photographer-dropdown">Preferred photographer:</label>
+                    <div class="photographer-selection">
+                        <select id="photographer-dropdown">
+                            <option value="Panida Paethanom">Panida Paethanom</option>
+                            <option value="Helene Flått">Helene Flått</option>
+                            <option value="Kenneth Sheikh">Kenneth Sheikh</option>
+                            <option value="Berken Ates">Berken Ates</option>
+                            <option value="Patrick Røthe">Patrick Røthe</option>
+                            <option value="No preference">No preference</option>
+                        </select>
+                        <a id="photographer-link" href="#">See our photographers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="request">
+            <label id="request-label" for="request">Other request/Description</label>
+            <input id="request" type="text" placeholder="your message">
+        </div>
+        <div class="btn-container">
+            <input class="btn" type="submit" value="Submit">
+            <a class="policy" href="#">Terms and policy</a>
+        </div>
+    </form>
+</main>
+
+<footer>
+    <div class="so-me-logos">
+        <a href="#" class="fb-logo"></a>
+        <a href="#" class="ig-logo"></a>
+    </div>
+    <h6 class="copyright">
+        All rights reserved 2024
+    </h6>
+    <a href="index.html" class="link-home">
+        <img alt="logo" class="logo" id="logo-footer" src="assets/logo/frame-logo.png"/>
+    </a>
+</footer>
+
+</body>
 </html>
