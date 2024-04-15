@@ -1,0 +1,105 @@
+.nav-menu > :nth-child(1) {
+    color: #FFB24B;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.polaroid-bg {
+    cursor: auto;
+}
+
+.show-case {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+    align-self: center;
+    justify-items: center;
+}
+
+.welcome-text {
+    display: flex;
+    margin-right: 80px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: "Allison", cursive;
+    font-size: 100px;
+}
+
+#headshot {
+    background: url("../assets/headshots/headshots2.jpeg") no-repeat 0 0 / cover;
+    width: 144px;
+    height: 159px;
+}
+
+#tinder {
+    background: url("../assets/tinder/tinder2.jpeg") no-repeat 0 0 / cover;
+    width: 144px;
+    height: 159px;
+}
+
+#wedding {
+    background: url("../assets/wedding/wedding3.jpeg") no-repeat 0 -60px / cover;
+    width: 144px;
+    height: 159px;
+}
+
+#boudoir {
+    background: url("../assets/boudoir/boudoir1.jpeg") no-repeat 0 0 / cover;
+    width: 144px;
+    height: 159px;
+}
+
+h3 {
+    display: flex;
+    width: 100%;
+    height: 53px;
+    justify-content: center;
+    align-items: center;
+    font-family: "caveat", sans-serif;
+    color: black;
+}
+
+#tilted {
+    transform: rotate(-8deg);
+}
+
+@media (max-width: 930px) {
+    .welcome-text {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 890px) {
+    main {
+        display: grid;
+    }
+
+    .show-case {
+        justify-self: center;
+    }
+
+    .welcome-text {
+        margin-bottom: 40px;
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .show-case {
+        margin-right: 0;
+    }
+}
