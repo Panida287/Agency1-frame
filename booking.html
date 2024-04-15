@@ -87,57 +87,72 @@
                             <label class="payment-label" id="photo-amount-label" for="photo-amount-radio">By amount of
                                 photos</label>
                         </div>
+                        <label for="photo-amount-dropdown"></label>
+                        <select id="photo-amount-dropdown">
+                            <option value="10 photos">10 photos 900 NOK</option>
+                            <option value="20 photos">20 photos 1.500 NOK</option>
+                            <option value="30 photos">30 photos 3.500 NOK</option>
+                        </select>
+                    </div>
+                    <div class="detail">
+                        <input id="half-day" type="radio" name="detail" value="half day">
+                        <label class="payment-label" id="half-day-label" for="half-day">Half day</label>
+                    </div>
+                    <div class="detail">
+                        <input id="full-day" type="radio" name="detail" value="full day">
+                        <label class="payment-label" id="full-day-label" for="full-day">Full day</label>
+                    </div>
 
 
-                        <!-- </form> -->
+                    <!-- </form> -->
 
 
-                        <!-- <form class="checklist-2"> -->
-                        <div class="vertical-sort">
-                            <label for="photo-amount">
-                                <input type="checkbox" id="photo-amount" name="photo-amount" value="option5" />
-                                By amount of photos
-                                <select id="photo-amount-options" name="photo-amount-options">
-                                    <option value="10">10 photos</option>
-                                    <option value="20">20 photos</option>
-                                    <option value="30">30 photos</option>
-                                </select>
-                            </label>
+                    <!-- <form class="checklist-2"> -->
+                    <div class="vertical-sort">
+                        <label for="photo-amount">
+                            <input type="checkbox" id="photo-amount" name="photo-amount" value="option5" />
+                            By amount of photos
+                            <select id="photo-amount-options" name="photo-amount-options">
+                                <option value="10">10 photos</option>
+                                <option value="20">20 photos</option>
+                                <option value="30">30 photos</option>
+                            </select>
+                        </label>
 
-                            <label for="Half day">
-                                <input type="checkbox" id="half-day" name="half-day" value="option6" />
-                                Half day
-                            </label>
-                            <label for="Full day">
-                                <input type="checkbox" id="full-day" name="full-day" value="option7" />
-                                Full day
-                            </label>
-                            <label for="photographer">
-                                Photographer
-                                <select id="photographer-options" name="photographer-options">
-                                    <option value="berken">Berken</option>
-                                    <option value="kenneth">Kenneth</option>
-                                    <option value="helene">Helene</option>
-                                    <option value="panida">Panida</option>
-                                    <option value="patrick">Patrick</option>
-                                </select>
-                            </label>
-
-                        </div>
-                        <!-- </form> -->
-                        </section>
-
-                        <div class="requests-form">
-                            <p class="request-title">Other request & information</p>
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="3" required
-                                placeholder="Extra information"></textarea>
-                        </div>
-
-                        <button type="submit">Submit</button>
-                        <!--will change this to a class -->
+                        <label for="Half day">
+                            <input type="checkbox" id="half-day" name="half-day" value="option6" />
+                            Half day
+                        </label>
+                        <label for="Full day">
+                            <input type="checkbox" id="full-day" name="full-day" value="option7" />
+                            Full day
+                        </label>
+                        <label for="photographer">
+                            Photographer
+                            <select id="photographer-options" name="photographer-options">
+                                <option value="berken">Berken</option>
+                                <option value="kenneth">Kenneth</option>
+                                <option value="helene">Helene</option>
+                                <option value="panida">Panida</option>
+                                <option value="patrick">Patrick</option>
+                            </select>
+                        </label>
 
                     </div>
+                    <!-- </form> -->
+                    </section>
+
+                    <div class="requests-form">
+                        <p class="request-title">Other request & information</p>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="3" required
+                            placeholder="Extra information"></textarea>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                    <!--will change this to a class -->
+
+                </div>
 
         </form>
     </main>
