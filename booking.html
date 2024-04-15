@@ -56,20 +56,21 @@
                 <label id="email-label" for="email">Email:</label>
                 <input id="email" type="text" placeholder="Email" required>
             </div>
-            <h2>Session options</h2>
 
-            <section class="form-checklist">
 
-                <!-- <form class="checklist-1"> -->
-                <div class="vertical-sort">
-                    <label for="Headshot">
-                        <input type="checkbox" id="headshot" name="headshot" value="option1" />
-                        Headshot session
-                    </label>
-                    <label for="Tindershots">
-                        <input type="checkbox" id="tinder" name="tindershot" value="option2" />
-                        Tinder shots
-                    </label>
+
+            <div class="type-of-session-container">
+                <div class="type-of-session">
+                    <p class="p2">Type of session</p>
+                    <div class="session-type">
+                        <input id="headshot" type="radio" name="session" value="headshot session">
+                        <label class="payment-label" id="headshot-label" for="headshot">Headshot session</label>
+                    </div>
+                    <div class="session-type">
+                        <input id="tinder" type="radio" name="session" value="tinder session">
+                        <label class="payment-label" id="tinder-label" for="tinder">Tinder session</label>
+                    </div>
+
                     <label for="Wedding-shots">
                         <input type="checkbox" id="wedding-shots" name="weddingshot" value="option3" />
                         Wedding shots
@@ -115,16 +116,16 @@
 
                 </div>
                 <!-- </form> -->
-            </section>
+                </section>
 
-            <div class="requests-form">
-                <p class="request-title">Other request & information</p>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="3" required placeholder="Extra information"></textarea>
-            </div>
+                <div class="requests-form">
+                    <p class="request-title">Other request & information</p>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="3" required placeholder="Extra information"></textarea>
+                </div>
 
-            <button type="submit">Submit</button>
-            <!--will change this to a class -->
+                <button type="submit">Submit</button>
+                <!--will change this to a class -->
 
             </div>
 
