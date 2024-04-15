@@ -48,16 +48,13 @@
                 </div>
             </div>
 
-            <form>
-                <p class="phone-title">Phone Number</p>
-
-                <input type="text" placeholder="Country Code" name="countryCode" required>
-                <input type="tel" placeholder="Phone Number" name="phoneNumber" required>
-            </form>
-            <!--Email input in phone form -->
-            <div class="mail-form">
-                <p class="mail-title">Email</p>
-                <input type="email" placeholder="Email Address" name="email" required>
+            <div class="phone">
+                <label id="phone-number-label" for="phone-number">Phone number</label>
+                <input type="tel" id="phone-number" placeholder="Phone number" required>
+            </div>
+            <div class="email">
+                <label id="email-label" for="email">Email:</label>
+                <input id="email" type="text" placeholder="Email" required>
             </div>
             <h2>Session options</h2>
 
