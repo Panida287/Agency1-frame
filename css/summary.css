@@ -1,0 +1,68 @@
+h3 {
+    color: #ffb24b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.summary {
+    width: 70%;
+    border-radius: 16px;
+    border: 1px solid #ffb24b;
+    margin: 40px auto 40px auto;
+    padding: 40px;
+}
+
+#summary-content {
+    height: 100%;
+    width: 100%;
+}
+
+.p1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.summary-header {
+    color: white;
+    font-size: 24px;
+}
+
+#summary-output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#summary-output p {
+    font-size: 16px;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+
+.faq-policy-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.faq-policy-container a p {
+    font-family: "Playfair Display", sans-serif;
+    color: #ffb24b;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.faq-policy-container a p:hover {
+    text-decoration: underline;
+}
