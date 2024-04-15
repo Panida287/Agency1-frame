@@ -19,6 +19,30 @@ h3 {
     width: 100%;
 }
 
+.p1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.summary-header {
+    color: white;
+    font-size: 24px;
+}
+
+#summary-output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#summary-output p {
+    font-size: 16px;
+}
+
 .btn-container {
     display: flex;
     align-items: center;
