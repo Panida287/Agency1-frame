@@ -1,0 +1,27 @@
+h3 {
+    color: #ffb24b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.summary {
+    width: 70%;
+    border-radius: 16px;
+    border: 1px solid #ffb24b;
+    margin: 40px auto 40px auto;
+    padding: 40px;
+}
+
+#summary-content {
+    height: 100%;
+    width: 100%;
+}
+
+.p1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
