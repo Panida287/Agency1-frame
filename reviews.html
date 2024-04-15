@@ -10,11 +10,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/reviews.css">
-    <script src="javascript/server.js" defer></script>
+    <link rel="stylesheet" href="css/reviews.css" />
     <script src="javascript/nav.js" defer></script>
     <script src="javascript/reviews.js" defer></script>
-    <title>panida photography</title>
+    <!--    for area code-->
+    <script src="javascript/contact.js" defer></script>
+    <script src="https://kit.fontawesome.com/5d32d5fe01.js" crossorigin="anonymous"></script>
+    <title>Frame photography</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -23,17 +25,21 @@
 </head>
 
 <body>
+
+    <div class="overlay"></div>
+
     <header>
         <a href="index.html" class="link-home">
             <img alt="logo" class="logo" src="assets/logo/frame-logo.png" height="133" width="277">
         </a>
         <nav class="nav-menu">
-            <a class="nav-link" href="#">Home</a>
-            <a class="nav-link" href="#">Gallery</a>
-            <a class="nav-link" href="#">Price</a>
-            <a class="nav-link" href="#">Book session</a>
-            <a class="nav-link" href="#">About us</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="gallery.html">Gallery</a>
+            <a class="nav-link" href="price.html">Price</a>
+            <a class="nav-link" href="booking.html">Book</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="reviews.html">Reviews</a>
         </nav>
         <div class="hamburger">
             <span class="bar"></span>
@@ -41,204 +47,162 @@
             <span class="bar"></span>
         </div>
     </header>
+
     <main>
-        <div class="carousel">
-            <div class="center-this">
-                <h3>Customer reviews</h3>
-            </div>
-            <div class="slider">
-                <div class="review-card">
-                    <div class="person-info">
-                        <div class="person-image">
-                            <img src="assets/headshots/christian-159.jpg" alt="Person Image">
-                        </div>
-                        <div class="rating">
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                        </div>
+        <h3>Customers reviews</h3>
+        <div class="wrapper">
+            <ul class="carousel">
+                <li class="card">
+                    <div class="polaroid-bg">
+                        <div id="review-pic-1" draggable="false"></div>
+                        <span class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
                     </div>
-                    <div class="review-content">
-                        <p class="review-text">"Exquisite wedding photography! The team at Frame exceeded all
-                            expectations!"</p>
+                    <div class="review-text">
+                        <p>
+                            "Exquisite wedding photography! The team at Frame exceeded all expectations. Their
+                            professionalism
+                            and talent captured our special day beautifully. Highly recommend!"
+                        </p>
                     </div>
-                </div>
-                <div class="review-card">
-                    <div class="person-info">
-                        <div class="person-image">
-                            <img src="assets/headshots/christian-159.jpg" alt="Person Image">
-                        </div>
-                        <div class="rating">
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                        </div>
+                </li>
+                <li class="card">
+                    <div class="polaroid-bg">
+                        <div id="review-pic-2" draggable="false"></div>
+                        <span class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
                     </div>
-                    <div class="review-content">
-                        <p class="review-text">"Exquisite wedding photography! The team at Frame exceeded all
-                            expectations!"</p>
+                    <div class="review-text">
+                        <p>
+                            "Exquisite wedding photography! The team at Frame exceeded all expectations. Their
+                            professionalism
+                            and talent captured our special day beautifully. Highly recommend!"
+                        </p>
                     </div>
-                </div>
-                <div class="review-card">
-                    <div class="person-info">
-                        <div class="person-image">
-                            <img src="assets/headshots/christian-159.jpg" alt="Person Image">
-                        </div>
-                        <div class="rating">
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                        </div>
+                </li>
+                <li class="card">
+                    <div class="polaroid-bg">
+                        <div id="review-pic-3" draggable="false"></div>
+                        <span class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
                     </div>
-                    <div class="review-content">
-                        <p class="review-text">"Exquisite wedding photography! The team at Frame exceeded all
-                            expectations!"</p>
+                    <div class="review-text">
+                        <p>
+                            "Exquisite wedding photography! The team at Frame exceeded all expectations. Their
+                            professionalism
+                            and talent captured our special day beautifully. Highly recommend!"
+                        </p>
                     </div>
-                </div>
-                <div class="review-card">
-                    <div class="person-info">
-                        <div class="person-image">
-                            <img src="assets/headshots/christian-159.jpg" alt="Person Image">
-                        </div>
-                        <div class="rating">
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                        </div>
+                </li>
+                <li class="card">
+                    <div class="polaroid-bg">
+                        <div id="review-pic-4" draggable="false"></div>
+                        <span class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
                     </div>
-                    <div class="review-content">
-                        <p class="review-text">"Exquisite wedding photography! The team at Frame exceeded all
-                            expectations!"</p>
+                    <div class="review-text">
+                        <p>
+                            "Exquisite wedding photography! The team at Frame exceeded all expectations. Their
+                            professionalism
+                            and talent captured our special day beautifully. Highly recommend!"
+                        </p>
                     </div>
-                </div>
-                <div class="review-card">
-                    <div class="person-info">
-                        <div class="person-image">
-                            <img src="assets/headshots/christian-159.jpg" alt="Person Image">
-                        </div>
-                        <div class="rating">
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                        </div>
+                </li>
+                <li class="card">
+                    <div class="polaroid-bg">
+                        <div id="review-pic-5" draggable="false"></div>
+                        <span class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
                     </div>
-                    <div class="review-content">
-                        <p class="review-text">"Exquisite wedding photography! The team at Frame exceeded all
-                            expectations!"</p>
+                    <div class="review-text">
+                        <p>
+                            "Exquisite wedding photography! The team at Frame exceeded all expectations. Their
+                            professionalism
+                            and talent captured our special day beautifully. Highly recommend!"
+                        </p>
                     </div>
-                </div>
-                <div class="review-card">
-                    <div class="person-info">
-                        <div class="person-image">
-                            <img src="assets/headshots/christian-159.jpg" alt="Person Image">
-                        </div>
-                        <div class="rating">
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                        </div>
+                </li>
+                <li class="card">
+                    <div class="polaroid-bg">
+                        <div id="review-pic-6" draggable="false"></div>
+                        <span class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
                     </div>
-                    <div class="review-content">
-                        <p class="review-text">"Exquisite wedding photography! The team at Frame exceeded all
-                            expectations!"</p>
+                    <div class="review-text">
+                        <p>
+                            "Exquisite wedding photography! The team at Frame exceeded all expectations. Their
+                            professionalism
+                            and talent captured our special day beautifully. Highly recommend!"
+                        </p>
                     </div>
-                </div>
-                <div class="review-card">
-                    <div class="person-info">
-                        <div class="person-image">
-                            <img src="assets/headshots/christian-159.jpg" alt="Person Image">
-                        </div>
-                        <div class="rating">
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                        </div>
-                    </div>
-                    <div class="review-content">
-                        <p class="review-text">"Exquisite wedding photography! The team at Frame exceeded all
-                            expectations!"</p>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="person-info">
-                        <div class="person-image">
-                            <img src="assets/headshots/christian-159.jpg" alt="Person Image">
-                        </div>
-                        <div class="rating">
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                        </div>
-                    </div>
-                    <div class="review-content">
-                        <p class="review-text">"Exquisite wedding photography! The team at Frame exceeded all
-                            expectations!"</p>
-                    </div>
-                </div>
-            </div>
-            <div class="controls">
-                <button class="prev">←</button>
-                <button class="next">→</button>
-            </div>
+                </li>
+            </ul>
         </div>
-        <div class="review-form">
-            <form action="#" method="post">
-                <h3>Write us a review!</h3>
-                <div class="form-container">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <label for="email">Email:</label>
-                        <label for="phone">Phone Number:</label>
-                        <label for="ratings">Ratings:</label><br>
-                    </div>
-                    <div class="form-input">
-                        <input type="text" id="name" name="name" placeholder="Name" required>
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                        <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <input type="radio" id="star5" name="ratings" value="5">
-                    <label for="star5">5 stars</label>
-                    <input type="radio" id="star4" name="ratings" value="4">
-                    <label for="star4">4 stars</label>
-                    <input type="radio" id="star3" name="ratings" value="3">
-                    <label for="star3">3 stars</label>
-                    <input type="radio" id="star2" name="ratings" value="2">
-                    <label for="star2">2 stars</label>
-                    <input type="radio" id="star1" name="ratings" value="1">
-                    <label for="star1">1 star</label>
-                </div>
-
-                <div class="form-group-rating">
-                    <label for="review">Your review</label><br>
-                </div>
-
-                <div class="form-group">
-
-                    <textarea id="review" name="review" placeholder="Your message" required></textarea>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
+        <div class="carets">
+            <i id="left" class="fa-solid fa-chevron-left"></i>
+            <i id="right" class="fa-solid fa-chevron-right"></i>
         </div>
+        <form class="review-form">
+            <h3 class="review-input-header">
+                Write us a review!
+            </h3>
+            <label id="name-label" for="name">Name :</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <label id="email-label" for="email">Email :</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <label id="phone-number-label" for="phone-number">Phone number :</label>
+            <input type="tel" id="phone-number" placeholder="Enter your phone number" required>
+            <p id="rating-label">Rating :</p>
+            <div class="star-widget">
+                <input type="radio" name="rate" id="rate-5">
+                <label for="rate-5" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-4">
+                <label for="rate-4" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-3">
+                <label for="rate-3" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-2">
+                <label for="rate-2" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-1">
+                <label for="rate-1" class="fas fa-star"></label>
+            </div>
+            <label id="review-label" for="review-msg">Your message</label>
+            <input type="text" id="review-msg" placeholder="Your review" required>
+            <div class="btn-container">
+                <input id="submit" class="btn" type="submit" value="Submit" onclick="showAlert()">
+            </div>
+        </form>
     </main>
+
     <footer>
         <div class="so-me-logos">
             <a href="#" class="fb-logo"></a>
@@ -251,6 +215,7 @@
             <img alt="logo" class="logo" id="logo-footer" src="assets/logo/frame-logo.png" height="133" width="277">
         </a>
     </footer>
+
 </body>
 
 </html>

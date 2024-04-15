@@ -1,190 +1,293 @@
-/* body */
-.carousel {
-    position: relative;
-    overflow: hidden;
-    height: 60vh;
-}
-
-.center-this {
-    display: flex;
-    justify-content: center;
-}
-
-.slider {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-/* Review-cards */
-.review-card {
-    display: flex;
-    align-items: center;
-    border: 1px solid #FFB24B;
-    border-radius: 16px;
-    margin: 20px;
-    width: 365px;
-    height: 214px;
-}
-
-.person-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    border-top-left-radius: 16px;
-    padding-bottom: 8px;
-    border-bottom-left-radius: 16px;
-}
-
-.person-image {
-    margin-bottom: 10px;
-}
-
-.person-image img {
-    width: 100px;
-    height: 100px;
-}
-
-.review-content {
-    background-color: black;
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
-    padding: 5px;  
-}
-
-.review-text {
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: white;
-    margin-left: 16px;
-}
-
-.rating {
-    font-size: 18px;
-}
-
-.star {
-    color: gold;
-}
-
-.slider img {
-    margin-right: 16px;
-    width: 100px;
-    height: 150px;
-    margin: 16px 16px 0 16px;
-}
-
-.controls {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-}
-
-button {
-        display: flex;
-        padding: 4px 16px 4px 16px;
-        justify-content: center;
-        align-items: center;
-        font-family: "Playfair Display", sans-serif;
-        width: 100px;
-        height: 50px;
-        border-radius: 50px;
-        border: 1px solid white;
-        background-color: transparent;
-        color: white;
-        cursor: pointer;
-        margin: 10px;
-        transition: 0.2s ease;
-        border: 1px solid #FFB24B;
-        color: #fff;
-        box-shadow: 0 0 5px 0 #FFB24B;
-}
-
-.prev {
-    margin-right: 10px;
-    width: 50px;
+.nav-menu > :nth-child(7) {
     color: #FFB24B;
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
-.next {
-    margin-left: 10px;
-    width: 50px;
-    color: #FFB24B;
-}
-
-/* form */
-form {
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main {
+    padding: 0 40px;
 }
 
 h3 {
     color: #FFB24B;
-    margin-bottom: 20px;
-    font-family: "Playfair Display", sans-serif;
-}
-
-.form-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
-.form-group {
-    margin-bottom: 5px;
-}
-
-.form-group-rating {
-    margin-right: 230px;
-}
-
-.form-input {
+main {
     display: flex;
     flex-direction: column;
-    padding-left: 16px;
+    align-items: center;
 }
 
-label {
-    color: #fff;
-    display: block;
-    margin-bottom: 5px;
+.carets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 40px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    height: 16px;
-    margin-bottom: 5px;
+.fa-chevron-left,
+.fa-chevron-right {
+    color: #FFB24B;
+    font-size: 40px;
+    cursor: pointer;
 }
 
-input[type="radio"] {
+.card {
+    display: flex;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(100%/3);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
     display: none;
 }
 
-label[for^="star"] {
-    float: right;
-    color: #ccc;
-    font-size: 20px;
-    padding: 5px;
+.carousel.dragging {
+    scroll-behavior: auto;
+    scroll-snap-type: none;
 }
 
-input[type="radio"]:checked ~ label[for^="star"] {
-    color: #ffc107;
+.carousel.no-transition {
+    scroll-behavior: auto;
 }
 
-input::placeholder {
+.carousel .dragging card {
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel-card {
+    scroll-snap-align: start;
+}
+
+#review-pic-1 {
+    background: url("../assets/tinder/tinder2.jpeg") no-repeat 0 0 / cover;
+    width: 144px;
+    height: 159px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#review-pic-2 {
+    background: url("../assets/tinder/tinder1.jpeg") no-repeat 0 0 / cover;
+    width: 144px;
+    height: 159px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#review-pic-3 {
+    background: url("../assets/tinder/tinder4.jpeg") no-repeat 0 0 / cover;
+    width: 144px;
+    height: 159px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#review-pic-4 {
+    background: url("../assets/tinder/tinder5.jpeg") no-repeat 0 0 / cover;
+    width: 144px;
+    height: 159px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#review-pic-5 {
+    background: url("../assets/tinder/tinder8.jpeg") no-repeat 0 0 / cover;
+    width: 144px;
+    height: 159px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#review-pic-6 {
+    background: url("../assets/tinder/tinder7.jpeg") no-repeat 0 0 / cover;
+    width: 144px;
+    height: 159px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.polaroid-bg {
+    cursor: auto;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    gap: 4px;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+}
+
+.fa-solid, .fa-star {
+    color: #FFB24B;
+}
+
+.review-text {
+    width: 150px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 16px 16px 0;
+    border: 1px solid #FFB24B;
+}
+
+p {
+    font-size: 14px;
+}
+
+.review-form {
+    display: grid;
+    gap: 16px;
+    margin-top: 40px;
+    grid-template-areas:
+    'header header'
+    'name-label name-input'
+    'email-label email-input'
+    'phone-label phone-input'
+    'rating-label rating'
+    'review-label review-label'
+    'review-msg review-msg'
+    'btn btn';
+}
+
+#name-label,
+#email-label,
+#phone-number-label,
+#rating-label,
+#review-label {
+    font-family: "lato", sans-serif;
+    font-size: 16px;
+    color: white;
     display: flex;
     align-items: center;
 }
 
-textarea {
+.review-input-header {
+    grid-area: header;
+}
+
+#name-label {
+    grid-area: name-label;
+}
+
+#name {
+    grid-area: name-input;
+}
+
+#email-label {
+    grid-area: email-label;
+}
+
+#email {
+    grid-area: email-input;
+}
+
+#phone-number-label {
+    grid-area: phone-label;
+}
+
+#phone-number {
+    grid-area: phone-input;
+}
+
+#rating-label {
+    grid-area: rating-label;
+}
+
+.star-widget {
+    grid-area: rating;
+}
+
+#message-label {
+    grid-area: review-label;
+}
+
+#review-msg {
+    grid-area: review-msg;
     height: 100px;
-    width: 314px;
+}
+
+.btn-container {
+    grid-area: btn;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star-widget input {
+    display: none;
+}
+
+input {
+    border-radius: 8px;
+    height: 34px;
+    padding-left: 8px;
+    outline: none;
+}
+
+.star-widget label {
+    font-size: 20px;
+    color: #444;
+    padding: 10px;
+    transition: all 0.2s ease;
+    float: right;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~label {
+    color: #FFB24B;
+}
+
+input:checked ~label {
+    color: #FFB24B;
+}
+
+input#rate-5:checked ~ label {
+    color: #FFB24B;
+    text-shadow: 0 0 20px #FFB24B;
+}
+
+@media (max-width: 1100px) {
+    .carousel {
+        grid-auto-columns: calc((100%/2) - 12px);
+    }
+}
+
+@media (max-width: 760px) {
+    .carousel {
+        grid-auto-columns: calc((100%) - 6px);
+    }
+}
+
+@media (max-width: 599px) {
+    h3 {
+        font-size: 20px;
+    }
 }
