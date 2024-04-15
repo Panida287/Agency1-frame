@@ -28,17 +28,16 @@
     <main>
         <h1>Book sessions with us!</h1>
 
-        <div class="booking-container">
+        <form class="container">
 
-            <form>
-                <p class="name-group-title">Client´s Name</p>
-                <div class="horizontal-sort">
-                    <form>
-                        <input type="text" id="firstName" name="firstName" required placeholder="First name" />
-                        <input type="text" id="lastName" name="lastName" required placeholder="Last name" />
-                    </form>
+            <div class="name">
+                <label id="name-label" for="name-input">Client's Name:</label>
+                <label for="last-name-input"></label>
+                <div class="name-input-area">
+                    <input id="name-input" type="text" placeholder="First name" required>
+                    <input id="last-name-input" type="text" placeholder="last name" required>
                 </div>
-            </form>
+            </div>
 
             <form>
                 <p class="time-title">Session Date & Time</p>
@@ -136,7 +135,7 @@
             <button type="submit">Submit</button>
             <!--will change this to a class -->
 
-        </div>
+            </div>
 
         </form>
     </main>
