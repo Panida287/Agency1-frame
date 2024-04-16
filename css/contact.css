@@ -1,53 +1,166 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
+.nav-menu > :nth-child(6) {
+    color: #FFB24B;
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    height: 100vh;
-    width: 100vw;
-}
-
-h1 {
-    background-color: white;
-}
-
-form {
+main {
     display: flex;
-    flex-direction: column;
-    color: white;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
 }
 
-img {
+.image img {
     width: 523px;
-    height: 743px;
+    height: 600px;
+    object-fit: contain;
 }
 
-.alignCenter {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
+.contact-form {
+    border-radius: 16px;
+    width: 550px;
+    border: 1px solid #FFB24B;
+    margin: 40px;
+    padding: 0 20px;
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(7, auto) 1fr;
+    backdrop-filter: blur(2px);
+    grid-template-areas:
+    'header header'
+    'name-label name-input'
+    'email-label email-input'
+    'phone-number-label phone-number-input'
+    'message-label message-label'
+    'message-input message-input'
+    'submit-btn submit-btn'
+;
 }
 
-.seperateUs {
+.form-header {
+    grid-area: header;
     display: flex;
-    justify-content: space-evenly;
-    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
-.mainPicture {
+#name-label {
+    grid-area: name-label;
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    font-family: "lato", sans-serif;
+    font-size: 16px;
+}
+
+#name {
+    grid-area: name-input;
+    height: 34px;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+}
+
+#email-label {
+    grid-area: email-label;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    font-family: "lato", sans-serif;
+    font-size: 16px;
+}
+
+#email {
+    grid-area: email-input;
+    height: 34px;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+}
+
+#phone-number-label {
+    grid-area: phone-number-label;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    font-family: "lato", sans-serif;
+    font-size: 16px;
+}
+
+.phone-number-input {
+    grid-area: phone-number-input;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#phone-number {
+    height: 34px;
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+}
+
+.iti__country-list .iti__country-name {
+    font-family: "lato", sans-serif;
+    font-size: 16px;
+}
+
+#area-code {
+    width: 70px;
+    height: 34px;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#message-label {
+    grid-area: message-label;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    font-family: "lato", sans-serif;
+    font-size: 16px;
+}
+
+#message {
+    grid-area: message-input;
+    height: 100px;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    outline: none;
+    padding: 20px;
+}
+
+.btn-container {
+    grid-area: submit-btn;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.contactForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid gold;
-}
+@media (max-width: 964px) {
+    body {
+        background: url("../assets/wedding/wedding12.jpeg") no-repeat 0 0 / cover;
+    }
 
+    .image {
+        display: none;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+}
