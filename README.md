@@ -29,3 +29,5 @@ What we have used
 - Javascript
 - lightbox external framework for carousel on gallery page
 - exiting photoshoot work from one of our members who is an ameteur photograher on the side.
+
+site is deployed here: https://framephotographyfed1.netlify.app
